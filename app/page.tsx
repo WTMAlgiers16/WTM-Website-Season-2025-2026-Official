@@ -5,8 +5,8 @@ import { AnimatedElement, StaggeredAnimation } from "@/components/animations"
 
 export default function HomePage() {
   const stats = [
-    { icon: Users, number: "500+", label: "Amazing Women", color: "from-[#42F5C3] to-[#16E7B4]" },
-    { icon: Code, number: "50+", label: "Tech Events", color: "from-[#6CD0F2] to-[#4FC3F7]" },
+    { icon: Users, number: "51-200", label: "Amazing Women", color: "from-[#42F5C3] to-[#16E7B4]" },
+    { icon: Code, number: "20+", label: "Events", color: "from-[#6CD0F2] to-[#4FC3F7]" },
     { icon: Heart, number: "100%", label: "Love & Support", color: "from-[#03BDA3] to-[#24CC9C]" },
   ]
 
@@ -62,7 +62,8 @@ export default function HomePage() {
             <AnimatedElement animation="slide-in-right" delay={600}>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
                 Empowering women in technology through community, mentorship, and amazing events! Join our vibrant
-                community and let's code the future together! 🚀
+                community and let's code the future together! 
+                {/* 🚀 */}
               </p>
             </AnimatedElement>
 
@@ -89,8 +90,8 @@ export default function HomePage() {
               {stats.map((stat, index) => (
                 <div key={index} className={`card-hover bg-gradient-to-br ${stat.color} bg-opacity-10 p-8 rounded-3xl`}>
                   <stat.icon
-                    className={`w-12 h-12 mx-auto mb-4`}
-                    style={{ color: stat.color.split(" ")[0].replace("from-[", "").replace("]", "") }}
+                    className={`w-12 h-12 mx-auto mb-4 text-white`}
+                    
                   />
                   <h3 className="text-3xl font-bold text-gray-800 mb-2">{stat.number}</h3>
                   <p className="text-gray-600">{stat.label}</p>
@@ -109,7 +110,8 @@ export default function HomePage() {
               <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Our Mission</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 We're on a mission to create an inclusive tech community where women can thrive, learn, and make a real
-                impact in the world of technology! 💪
+                impact in the world of technology! 
+                {/* 💪 */}
               </p>
             </div>
           </AnimatedElement>
@@ -120,8 +122,8 @@ export default function HomePage() {
                 {missionSteps.map((step, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div
-                      className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                      style={{ backgroundColor: step.color }}
+                      className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 font-bold bg-white shadow-xl"
+                      style={{ color: step.color }}
                     >
                       {step.number}
                     </div>
@@ -154,7 +156,8 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Explore Our Community</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover all the amazing things happening in our community! 🌟
+                Discover all the amazing things happening in our community! 
+                {/* 🌟 */}
               </p>
             </div>
           </AnimatedElement>
@@ -208,7 +211,8 @@ export default function HomePage() {
           <AnimatedElement animation="scale-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Join Us?</h2>
             <p className="text-xl mb-8 opacity-90">
-              Be part of an amazing community that's changing the face of technology, one woman at a time! 🌟
+              Be part of an amazing community that's changing the face of technology, one woman at a time! 
+              {/* 🌟 */}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="fun-button text-lg px-8 py-4 bg-white text-[#03BDA3] hover:bg-gray-100">

@@ -6,33 +6,34 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const groupPhotos = [
   {
     id: 1,
-    image: "/placeholder.svg?height=400&width=800",
-    title: "Tech Conference 2024",
-    description: "Our amazing team at the annual tech conference",
+    image: "/general-images/WTMLibMentors.png",
+    title: "WTMLIB",
+    description: "Mentors and mentees from our WTMLib event",
   },
   {
     id: 2,
-    image: "/placeholder.svg?height=400&width=800",
-    title: "React Workshop",
-    description: "Participants from our React fundamentals workshop",
+    image: "/general-images/IWD'24Challenge.png",
+    title: "IWD'24",
+    description: "A memory from our prompt challenge, with participants fully immersed in the task.",
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=400&width=800",
-    title: "Networking Night",
-    description: "Building connections at our monthly networking event",
+    image: "/general-images/devFestPicture.png",
+    title: "DevFest'22",
+    description: "Together at DevFest, learning, sharing, and connecting.",
   },
   {
     id: 4,
-    image: "/placeholder.svg?height=400&width=800",
-    title: "Hackathon Winners",
-    description: "Celebrating our hackathon champions",
+    image: "/general-images/participants.jpg",
+    title: "ARduino workshop",
+    description: "Participants from our Arduino workshop",
   },
   {
+
     id: 5,
-    image: "/placeholder.svg?height=400&width=800",
-    title: "Mentorship Program",
-    description: "Mentors and mentees from our program",
+    image: "/general-images/firebase-summit.png",
+    title: "Firebase Summit 2019",
+    description: "Our amazing leads at firbase Summit Madrid 2019",
   },
 ]
 
@@ -72,7 +73,7 @@ export function PhotoCarousel() {
         {groupPhotos.map((photo, index) => (
           <div key={photo.id} className="carousel-slide h-full">
             <div className="relative h-full">
-              <img src={photo.image || "/placeholder.svg"} alt={photo.title} className="w-full h-full object-cover" />
+              <img src={photo.image || "/placeholder.svg"} alt={photo.title} className="w-[100vw] h-[90vh]" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">{photo.title}</h3>
