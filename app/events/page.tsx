@@ -68,7 +68,8 @@ export default function EventsPage() {
           <AnimatedElement animation="fade-in">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Events</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Join us for workshops, conferences, and networking events that empower women in tech! 🎉
+              Join us for workshops, conferences, and networking events that empower women in tech! 
+              {/* 🎉 */}
             </p>
           </AnimatedElement>
         </div>

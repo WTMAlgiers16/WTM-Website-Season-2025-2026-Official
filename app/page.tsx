@@ -5,7 +5,7 @@ import { AnimatedElement, StaggeredAnimation } from "@/components/animations"
 
 export default function HomePage() {
   const stats = [
-    { icon: Users, number: "51-200", label: "Amazing Women", color: "from-[#42F5C3] to-[#16E7B4]" },
+    { icon: Users, number: "200+", label: "Amazing Women", color: "from-[#42F5C3] to-[#16E7B4]" },
     { icon: Code, number: "20+", label: "Events", color: "from-[#6CD0F2] to-[#4FC3F7]" },
     { icon: Heart, number: "100%", label: "Love & Support", color: "from-[#03BDA3] to-[#24CC9C]" },
   ]

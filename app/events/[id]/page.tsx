@@ -172,7 +172,7 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                       {event.speakers.map((speaker, index) => (
                         <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
                           <img
-                            src={speaker.image || "/placeholder.svg"}
+                            src={speaker.image || "/placeholder-user.jpg"}
                             alt={speaker.name}
                             className="w-16 h-16 rounded-full object-cover"
                           />
@@ -180,6 +180,55 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                             <h4 className="font-bold text-gray-800">{speaker.name}</h4>
                             <p className="text-[#03BDA3] font-semibold text-sm">{speaker.role}</p>
                             <p className="text-gray-600 text-sm">{speaker.bio}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </AnimatedElement>
+              )}
+              {/* Mentors */}
+              {event.mentors && event.mentors.length > 0 && (
+                <AnimatedElement animation="fade-in" delay={400}>
+                  <div className="bg-white rounded-3xl shadow-xl p-8 mb-8">
+                    <h3 className="text-2xl font-bold gradient-text mb-6">Featured Mentors</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {event.mentors.map((mentor, index) => (
+                        <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                          <img
+                            src={mentor.image || "/placeholder-user.jpg"}
+                            alt={mentor.name}
+                            className="w-16 h-16 rounded-full object-cover"
+                          />
+                          <div>
+                            <h4 className="font-bold text-gray-800">{mentor.name}</h4>
+                            <p className="text-[#03BDA3] font-semibold text-sm">{mentor.role}</p>
+                            <p className="text-gray-600 text-sm">{mentor.bio}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </AnimatedElement>
+              )}
+              {/* Trainers */}
+              {event.trainers && event.trainers.length > 0 && (
+                <AnimatedElement animation="fade-in" delay={400}>
+                  <div className="bg-white rounded-3xl shadow-xl p-8 mb-8">
+                    <h3 className="text-2xl font-bold gradient-text mb-6">Featured Trainers
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {event.trainers.map((trainer, index) => (
+                        <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                          <img
+                            src={trainer.image || "/placeholder-user.jpg"}
+                            alt={trainer.name}
+                            className="w-16 h-16 rounded-full object-cover"
+                          />
+                          <div>
+                            <h4 className="font-bold text-gray-800">{trainer.name}</h4>
+                            <p className="text-[#03BDA3] font-semibold text-sm">{trainer.role}</p>
+                            <p className="text-gray-600 text-sm">{trainer.bio}</p>
                           </div>
                         </div>
                       ))}
