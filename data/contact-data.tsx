@@ -16,7 +16,7 @@ export const contactMethods: ContactMethod[] = [
     icon: "Mail",
     title: "Email Us",
     description: "Drop us a line anytime!",
-    contact: "hello@wtm.com",
+    contact: "wtm.algiers@esi.dz",
     color: "from-[#42F5C3] to-[#16E7B4]",
   },
   {
@@ -30,7 +30,7 @@ export const contactMethods: ContactMethod[] = [
     icon: "MapPin",
     title: "Visit Us",
     description: "Come say hi in person!",
-    contact: "San Francisco, CA",
+    contact: "ESI Algiers, Algeria",
     color: "from-[#03BDA3] to-[#24CC9C]",
   },
   {

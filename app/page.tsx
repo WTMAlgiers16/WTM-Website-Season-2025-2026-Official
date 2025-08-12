@@ -128,7 +128,7 @@ export default function HomePage() {
                       {step.number}
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-800 mb-2">{step.title}</h3>
+                      <h3 className="text-xl font-semibold text-white mb-2">{step.title}</h3>
                       <p className="text-gray-600">{step.description}</p>
                     </div>
                   </div>

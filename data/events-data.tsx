@@ -140,7 +140,8 @@ export const eventsData = {
   events: [
     {
   "id": 1,
-  "title": "IWD’24 Algiers (International Women’s Day Hub)",
+  "title": "IWD’24 Algiers",
+  "theme": "Impact the future",
   "date": "2024-05-24",
   "time": "9:00 AM - 4:00PM",
   "location": "École Nationale d’Informatique, Oued Smar, Algiers, Algeria",
@@ -458,76 +459,790 @@ export const eventsData = {
     },
     {
       id: 6,
-      title: "Cybersecurity Workshop",
-      date: "2024-08-10",
-      time: "1:00 PM - 5:00 PM",
-      location: "Tech Campus, Denver",
+      title: "IWD’23",
+      theme: "Dare to create a perfect world",
+      date: "2023-03-16",
+      time: "9:00 AM - 5:00 PM",
+      location: "ESI Algiers - Oued Smar",
       attendees: 60,
       maxAttendees: 70,
-      mission: "Empowering women to enter the cybersecurity field",
-      description: "Comprehensive workshop on cybersecurity basics and career paths.",
+      mission: "Our 2023 edition aimed to equip participants with cutting-edge technical skills, spark creativity through a hackathon, and empower women to thrive as leaders and innovators in the tech industry.",
+      description: "International Women’s Day (IWD) is a global initiative led by Women Techmakers chapters worldwide to celebrate women in technology, foster innovation, and create opportunities for learning and collaboration. ",
       fullDescription: `
-        <p>With cybersecurity being one of the fastest-growing fields in tech, this workshop was designed to introduce women to the exciting opportunities in information security. From technical fundamentals to career pathways, participants gained comprehensive insights into this critical field.</p>
-        
-        <h3>Workshop Content</h3>
+        <p>The IWD 2023 Algiers edition brought together tech enthusiasts, developers, and innovators for a day filled with immersive workshops, a high-energy hackathon, and meaningful networking opportunities. Participants engaged with experts in web security, cloud technologies, AI, and software development while collaborating to solve real-world challenges during the hackathon. The event culminated in celebrating the winning teams whose innovative solutions showcased the talent and creativity of our community.</p>
+        <h3><strong>Workshops</strong></h3>
         <ul>
-          <li>Introduction to cybersecurity principles and frameworks</li>
-          <li>Hands-on exercises with security tools and techniques</li>
-          <li>Career paths in cybersecurity (technical and non-technical)</li>
-          <li>Industry certifications and learning resources</li>
-          <li>Building a cybersecurity portfolio</li>
-          <li>Networking with cybersecurity professionals</li>
+          <li>How to Make a Secure Web App?</li>
+          <li>Working with Containers: Docker</li>
+          <li>GitHub Actions</li>
+          <li>Introduction to Generative Modeling</li>
+          <li>Build Your First Web Application with the T3 Stack</li>
         </ul>
-        
-        <h3>Career Impact</h3>
-        <p>This workshop inspired many participants to pursue cybersecurity careers, with several making successful career transitions within months of attending.</p>
-      `,
-      image: "/placeholder.svg?height=300&width=400",
-      images: ["/placeholder.svg?height=300&width=400", "/placeholder.svg?height=300&width=400"],
+        <p>Workshops ran in parallel morning and afternoon sessions, giving participants the chance to tailor their learning paths and explore topics from AI modeling to DevOps automation.</p>
+        <h3><strong>Hackathon</strong></h3>
+        <p>The hackathon challenged participants to design innovative solutions addressing real-world problems, fostering teamwork, problem-solving, and creativity under time constraints.
+          Winners were announced at the closing ceremony, with prizes awarded to the most impactful and technically impressive projects, showcasing the diversity of thought and innovation within the community.</p>
+        <h3><strong>Highlights</strong></h3>
+        <ul>
+          <li>Hands-on sessions with industry experts</li>
+          <li>Real-world project building during the hackathon</li>
+          <li>Networking opportunities with peers and professionals</li>
+          <li>Diverse technical topics covering AI, DevOps, and secure web development</li>
+        </ul>
+        <h3><strong>Impact</strong></h3>
+        <p>IWD 2023 empowered participants to expand their technical expertise, gain practical experience, and connect with like-minded innovators. The workshops provided skills immediately applicable to professional projects, while the hackathon fostered creative problem-solving and teamwork. Several participants reported continuing their hackathon projects beyond the event, with some considering startup development, a testament to the event’s lasting influence.</p>
+          `
+      ,
+      image: "/general-images/iwd23.png",
+      images: ["/general-images/iwd23-mem5.png", "/general-images/iwd23-mem1.png", "/general-images/iwd23-mem2.png", "/general-images/iwd23-mem3.png", "/general-images/iwd23-mem4.png"],
       registrationOpen: false,
-      impact: {
-        participants: 60,
-        careerPivots: 15,
-        certificationsPursued: 25,
-        newConnections: 30,
-        jobPlacements: 8,
-        feedback: {
-          rating: 4.7,
-          testimonials: [
-            "Opened my eyes to cybersecurity opportunities!",
-            "The hands-on exercises were incredibly valuable.",
-            "Great introduction to a complex field.",
-          ],
-        },
-      },
+      // impact: {
+      //   participants: 60,
+      //   careerPivots: 15,
+      //   certificationsPursued: 25,
+      //   newConnections: 30,
+      //   jobPlacements: 8,
+      //   feedback: {
+      //     rating: 4.7,
+      //     testimonials: [
+      //       "Opened my eyes to cybersecurity opportunities!",
+      //       "The hands-on exercises were incredibly valuable.",
+      //       "Great introduction to a complex field.",
+      //     ],
+      //   },
+      // },
       partners: [
         {
-          name: "CyberSec Solutions",
-          logo: "/placeholder.svg?height=60&width=100",
-          role: "Industry Partner",
-          description: "Provided expert instructors and real-world case studies",
+          name: "Datacamp",
+          logo: "/partners-images/datacamp.png",
+          role: "Community Partner and sponsor",
+          description: "supports the event by providing resources, expertise, and outreach to help achieve its goals.",
         },
         {
-          name: "Denver Tech Campus",
-          logo: "/placeholder.svg?height=60&width=100",
-          role: "Venue Partner",
+          name: "BEYN",
+          logo: "/partners-images/beyn.png",
+          role: "Sponsor",
+          description: "It highlights both their sponsorship status and their industry expertise.",
+        },
+        {
+          name: "Tie Realistic Security",
+          logo: "/partners-images/realistic.jpg",
+          role: "Sponsor",
           description: "Hosted the event with state-of-the-art security lab facilities",
         },
       ],
       speakers: [
         {
-          name: "Dr. Michelle Rodriguez",
-          role: "Cybersecurity Consultant",
-          bio: "Former NSA analyst, now independent security consultant",
-          image: "/placeholder.svg?height=150&width=150",
+          name: "Merouan Oussama Abdallah",
+          role: "Cybersecurity enthusiast,",
+          bio: "5th-year Cybersecurity student at Paris Cité. Passionate about security, active CTF player, and bug bounty hunter.",
+          image: "/speakers-images/marouane.jpg",
         },
         {
-          name: "Lisa Chang",
-          role: "CISO at Fortune 500 Company",
-          bio: "Leading cybersecurity executive with 15+ years experience",
-          image: "/placeholder.svg?height=150&width=150",
+          name: "Kawther Asma Mahboubi",
+          role: "CTO at Emploitic",
+          bio: "Software Backend Engineer",// to be changed
+          image: "/speakers-images/kawther.png",
+        },
+        {
+          name: "Nada HANAD",
+          role: "PhD Student in Cybersecurity & AI, Software Engineer",
+          bio: "Software Engineer and Full Stack Developer with a degree in Systems and Software Engineering. Passionate about building efficient, user-focused applications.",
+          image: "/speakers-images/nada.jpg",
+        },
+        {
+          name: "Samia Belhaddad",
+          role: "Samsung innovation Campus Algeria", //to be changed
+          bio: "Final year Master's student in Applied Statistics", // to be changed
+          image: "/speakers-images/samia.png",
+        },
+        {
+          name: "Afaf Kelai",
+          role: "Software Engineer, Data Scientist, IT Mentor",
+          bio: "Full Stack Software Engineer experienced in building high-quality applications with modern web technologies, cloud deployment, and collaborative development workflows.",
+          image: "/speakers-images/afaf.png",
         },
       ],
+      mentors: [
+        {
+          name: "Badla Moussaab",
+          role: "Flutter developer, Freelancer",
+          bio: "Computer science student",// to be changed
+          image: "/speakers-images/badla.png",
+        },
+        {
+          name: "Ahmed Yacine Bouchouareb",
+          role: "AI & Software Development Engineer",
+          bio: "A final-year Computer Science student with experience studying at two of Algeria’s top computer science schools, passionate about technology and software development.",
+          image: "/speakers-images/yacine.jpg",
+        },
+      ]
+    },
+
+
+    {
+      id: 7,
+      title: "UXCAMP",
+      theme: "",
+      date: "2022-05-27",
+      time: "The whole day (for two days)",
+      location: "ESI Algiers - Oued Smar",
+      attendees: 44,
+      maxAttendees: 50,
+      mission: "To inspire and empower emerging talent by providing real-world product challenges that foster creativity, innovation, and problem-solving skills.",
+      description: "This competition invites aspiring innovators to tackle live, realistic product challenges in a collaborative and creative environment.",
+      fullDescription: `
+        <p>A dynamic UX competition where teams choose their own idea and transform it into an innovative, user-centered solution. The journey begins with a series of hands-on workshops led by experts, equipping participants with the skills and insights they need, from research and ideation to prototyping and testing. Teams then put their learning into action, collaborating to design impactful experiences and showcasing their creativity in the final challenge.</p>
+        <h3><strong>Impact</strong></h3>
+        <p>This competition empowers emerging UX talent to transform real-world challenges into user-centered solutions. It cultivates design thinking, empathy, and creative problem-solving, while fostering collaboration between aspiring designers and industry experts. Participants gain hands-on experience that strengthens their portfolios, sharpens their skills, and prepares them to shape the future of digital experiences.</p>
+        `
+      ,
+      image: "/general-images/uxcamp2.png",
+      images: ["/general-images/uxcamp-mem1.png", "/general-images/uxcamp-mem2.png", "/general-images/uxcamp-mem3.png", "/general-images/uxcamp-mem4.png", "/general-images/uxcamp-mem5.png"],
+      registrationOpen: false,
+      agenda: [
+  {
+    "time": "Day 1: 8:30am - 9:15am",
+    "activity": "Check-in & opening ceremony"
+  },
+  {
+    "time": "9:15am - 9:30am",
+    "activity": "Team building & ice-breaker"
+  },
+  {
+    "time": "9:30am - 10:15am",
+    "activity": "The basics of UX/UI"
+  },
+  {
+    "time": "10:15am - 10:45am",
+    "activity": "Ideas brainstorming"
+  },
+  {
+    "time": "10:45am - 11:15am",
+    "activity": "Users needs & product goals workshop"
+  },
+  {
+    "time": "11:15am - 12:00pm",
+    "activity": "Reframe your user needs & product goals"
+  },
+  {
+    "time": "12:00pm - 2:00pm",
+    "activity": "Lunch break & prayer"
+  },
+  {
+    "time": "2:00pm - 2:30pm",
+    "activity": "Mentoring session"
+  },
+  {
+    "time": "2:30pm - 3:00pm",
+    "activity": "User journey workshop"
+  },
+  {
+    "time": "3:00pm - 4:00pm",
+    "activity": "Two user journey map + wireframing"
+  },
+  {
+    "time": "4:00pm - 4:30pm",
+    "activity": "Tea & coffee break"
+  },
+  {
+    "time": "4:30pm - 5:00pm",
+    "activity": "Start sketching"
+  },
+  {
+    "time": "5:00pm - 5:30pm",
+    "activity": "First day recap"
+  },
+  {
+    "time": "9:00pm - 9:30pm",
+    "activity": "First submission"
+  },
+  {
+    "time": "Day 2: 8:30am - 9:00am",
+    "activity": "Check-in"
+  },
+  {
+    "time": "9:00am - 9:30am",
+    "activity": "First day recap & second day program"
+  },
+  {
+    "time": "9:30am - 11:00am",
+    "activity": "Prototype & UI workshop"
+  },
+  {
+    "time": "11:00am - 11:30am",
+    "activity": "User testing best practices workshop"
+  },
+  {
+    "time": "11:30am - 12:00pm",
+    "activity": "Testing & reporting results"
+  },
+  {
+    "time": "12:00pm",
+    "activity": "Second submission deadline"
+  },
+  {
+    "time": "12:00pm - 1:00pm",
+    "activity": "Lunch break"
+  },
+  {
+    "time": "1:00pm - 2:00pm",
+    "activity": "Preparation of presentations"
+  },
+  {
+    "time": "2:00pm - 2:15pm",
+    "activity": "Presentations submissions"
+  },
+  {
+    "time": "2:30pm - 4:30pm",
+    "activity": "Pitching"
+  },
+  {
+    "time": "4:30pm - 5:00pm",
+    "activity": "Tea & coffee break"
+  },
+  {
+    "time": "5:00pm - 5:30pm",
+    "activity": "Judge deliberation & closing ceremony"
+  }
+
+],
+      // impact: {
+      //   participants: 60,
+      //   careerPivots: 15,
+      //   certificationsPursued: 25,
+      //   newConnections: 30,
+      //   jobPlacements: 8,
+      //   feedback: {
+      //     rating: 4.7,
+      //     testimonials: [
+      //       "Opened my eyes to cybersecurity opportunities!",
+      //       "The hands-on exercises were incredibly valuable.",
+      //       "Great introduction to a complex field.",
+      //     ],
+      //   },
+      // },
+      // partners: [],
+      // speakers: [],
+      mentors: [
+        {
+          name: "Belhimer Adel Abderrahmane",
+          role: "Product designer at yassir",
+          bio: "Senior Product Designer with 5+ years of experience creating user-centered digital products.",
+          image: "/speakers-images/adel.jpg",
+        },
+        {
+          name: "Yousra Farhani",
+          role: "ESI student, quantum computing research intern",
+          bio: "An ambitious Researcher with a research specialization in Quantum Computing focusing on Quantum Optimisation and QML",
+          image: "/speakers-images/yousraFarhani.jpg"
+        },
+        {
+          name: "Linda Yadroudj",
+          role: "B2B Product Designer",
+          bio: "A UI/UX Designer with 3 years of experience working with many companies here in Algeria",
+          image: "/speakers-images/linda.jpg",
+        },
+        {
+          name: "Mohamed Chakib Kerri",
+          role: "IT and digital Projects Manager", 
+          bio: "Passionate about the different strategies and culture of the business world, with experience in contributing to and shaping various aspects of this vast ecosystem",
+          image: "/speakers-images/chakib.jpg",
+        },
+        {
+          name: "Ayoub Khenfouf",
+          role: "UI/UX designer",
+          bio: "Graduate in information systems and technologies with experience in developing ERP solutions based on Odoo, demonstrating the ability to design tailored tools for industry needs.",
+          image: "/speakers-images/ayoub.png",
+        },
+        {
+          name: "Aymen Krioudj",
+          role: "IT Production & DevOps Engineer",
+          bio: "Computer Science Engineer with a passion for the practical application of technology, including significant experience in the development and delivery of high quality software product",
+          image: "/speakers-images/aymen.png",
+        },
+        {
+          name: "Asmaa Haidour",
+          role: "Data Product Definition Analyst chez Amadeus",
+          bio: "Enthusiastic about business needs analysis, dedicated to turning operational challenges into effective IT solutions.",
+          image: "/speakers-images/asmaa.jpg",
+        },
+        {
+          name: "Meriem Retiel",
+          role: "Computer science engineer",
+          bio: "Recently graduated from the Higher National School of Computer Science with a specialization in Information Systems and Technologies, I am passionate about creativity, analysis, and problem-solving.",
+          image: "/speakers-images/meriem.jpg",
+        },
+      ],
+
+    },
+
+
+
+    {
+      id: 8,
+      title: "IWD’22",
+      theme: "Progress Not Perfection",
+      date: "2022-03-17",
+      time: "The whole day (for two days)",
+      location: "ESI Algiers - Oued Smar",
+      attendees: 38,
+      maxAttendees: 50,
+      mission: "To celebrate International Women’s Day by creating an inclusive space where women can connect, learn, and grow—featuring engaging activities, inspiring conferences, and our very first hackathon, aimed at fostering innovation and promoting well-being.",
+      description: "The second edition of International Women’s Day celebration, featuring fun activities, inspiring talks",
+      fullDescription: `
+        <p>IWD (International Women’s Day) is an international day celebrating women’s economic, political, and social achievements. To show our pride in the contributions women in technology make across the industry, WTM Algiers created a space for inclusive learning, networking, and professional development.
+        For IWD’22, with the theme Progress Not Perfection: Striving for Well-being, the celebration included a variety of fun activities, inspiring conferences, and our first-ever hackathon. The event featured 7 talks that brought together ideas, stories, and insights from diverse voices, ensuring there was something for everyone.</p>
+        `
+      ,
+      image: "/general-images/iwd22.png",
+      images: ["/general-images/iwd22-mem1.png", "/general-images/iwd22-mem2.png", "/general-images/iwd22-mem3.png", "/general-images/iwd22-mem4.png"],
+      registrationOpen: false,
+      agenda: [
+
+        {
+    "time": " Day 1: 9:00am - 9:30am",
+    "activity": "Opening ceremony"
+  },
+  {
+    "time": "9:30am - 10:30am",
+    "activity": "Lean Canvas"
+  },
+  {
+    "time": "10:45am - 11:30am",
+    "activity": "How Artificial Intelligence is impacting UX Design",
+  },
+  {
+    "time": "2:00pm - 2:45pm",
+    "activity": "Open discussion: Progress not perfection"
+  },
+  {
+    "time": "Day 2: 9:00am - 9:30am",
+    "activity": "Opening ceremony"
+  },
+  {
+    "time": "9:30am - 10:30am",
+    "activity": "Lean Canvas"
+  },
+  {
+    "time": "10:45am - 11:30am",
+    "activity": "How Artificial Intelligence is impacting UX Design",
+  },
+  {
+    "time": "2:00pm - 2:45pm",
+    "activity": "Open discussion: Progress not perfection"
+  },
+  {
+    "time": "9:30am - 10:15am",
+    "activity": "Kick start your SalesForce Journey",
+  },
+  {
+    "time": "10:30am - 11:15am",
+    "activity": "Privacy & Digital Security",
+  },
+  {
+    "time": "11:30am - 12:15pm",
+    "activity": "Applying Solid to React",
+  },
+  {
+    "time": "2:30pm - 3:15pm",
+    "activity": "Deepfake & its ethical side",
+  }
+],
+      // impact: {
+      //   participants: 60,
+      //   careerPivots: 15,
+      //   certificationsPursued: 25,
+      //   newConnections: 30,
+      //   jobPlacements: 8,
+      //   feedback: {
+      //     rating: 4.7,
+      //     testimonials: [
+      //       "Opened my eyes to cybersecurity opportunities!",
+      //       "The hands-on exercises were incredibly valuable.",
+      //       "Great introduction to a complex field.",
+      //     ],
+      //   },
+      // },
+      partners: [
+        {
+          name: "Github",
+          logo: "/partners-images/github.jpg",
+          role: "Sponsor",
+          description: "supports the event by providing resources",
+        },
+        {
+          name: "Digital Ocean",
+          logo: "/partners-images/ocean.png",
+          role: "Sponsor",
+          description: "Cloud infrastructure provider",
+        },
+        {
+          name: "LG",
+          logo: "/partners-images/lg.png",
+          role: "Sponsor",
+          description: "Contributing to its success and encouraging innovations",
+        },
+        {
+          name: "OMES Algerie",
+          logo: "/partners-images/omes.jpg",
+          role: "Sponsor",
+          description: "Sponsored the event by leveraging their IT and telecom expertise ",
+        },
+      ],
+      speakers: [
+        {
+          name: "Abir Hammache",
+          role: "Software developer",
+          bio: "Fullstack Engineer with a strong foundation in software development and over 5 years of professional experience designing and building consistent and scalable web applications.",
+          image: "/speakers-images/abir.jpg",
+        },
+        {
+          name: "Yousra Farhani",
+          role: "ESI student, quantum computing research intern",
+          bio: "An ambitious Researcher with a research specialization in Quantum Computing focusing on Quantum Optimisation and QML",
+          image: "/speakers-images/yousraFarhani.jpg"
+        },
+        {
+          name: "Elbatoul Mazighi",
+          role: "Senior Salesforce Consultant",
+          bio: "Computer engineer with experience as an ambassador at WTM.",
+          image: "/speakers-images/elbatoul.png",
+        },
+        {
+          name: "Noha Nekamiche",
+          role: "PhD student at CIAD-LAB @UTBM",
+          bio: "A PhD researcher at CIAD Lab, UTBM, France, specializing in domain generalization for semantic segmentation, with expertise in AI, deep learning, computer vision, and experience in leading projects, team management, and real-world problem-solving.",
+          image: "/speakers-images/noha.jpg",
+        },
+        {
+          name: "Aymen Krioudj",
+          role: "IT Production & DevOps Engineer",
+          bio: "Computer Science Engineer with a passion for the practical application of technology, including significant experience in the development and delivery of high quality software product",
+          image: "/speakers-images/aymen.png",
+        },
+        {
+          name: "Bilal Retiat",
+          role: "Senior Offensive Security Engineer at Emirates",
+          bio: "A perpetual learner who enjoys building and breaking things with an appetite for sharing and spreading knowledge.",
+          image: "/speakers-images/bilal.jpg"
+        },
+        {
+          name: "Amouri Mohammed Abdessamed",
+          role: "Youth Delegate and Project Assistant at the United Nations Development Programme",
+          bio: "Youth Development Delegate at 'PNUD' and a product develpment manager at 'Société Générale Algérie'",
+          image: "/speakers-images/amouri.jpg",
+        },
+      ],
+      mentors: [
+        {
+          name: "Abir Bourbia",
+          role: "Business Analyst @Orange",
+          bio: "State Engineer in Information Systems and Technologies, graduate of ESI, currently pursuing an M2 in MIAGE, Business Intelligence at Paris-Saclay; dynamic, committed, proactive, and organized, seeking a permanent position as an IT Consultant, Business Analyst, Data Analyst, or IT Architect.",
+          image: "/speakers-images/abirB.png",
+        },
+        {
+          name: "Ayoub Benaissa",
+          role: "Senior Software Engineer at Zama",
+          bio: "A polyglot software engineer with a strong background in the crypto and privacy domains, holding a Master's degree in Computer Science.",
+          image: "/speakers-images/ayoubB.png"
+        },
+        {
+          name: "Aymen Berriche",
+          role: "Research Intern @Thales working on Unlearning",
+          bio: "Graduated ESI student and Research Intern at Thales, exploring Unlearning, AI Privacy, and NeuroAI.",
+          image: "/speakers-images/aymenB.jpg",
+        },
+        {
+          name: "Bilal Retiat",
+          role: "Senior Offensive Security Engineer at Emirates",
+          bio: "A perpetual learner who enjoys building and breaking things with an appetite for sharing and spreading knowledge.",
+          image: "/speakers-images/bilal.jpg"
+        },
+        {
+          name: "Israa Hamdine",
+          role: "Machine Learning Engineer",
+          bio: "Graduated student from ESI and Machine Learning Engineer.",
+          image: "/speakers-images/israa.png",
+        },
+        {
+          name: "Ayoub Khenfouf",
+          role: "UI/UX designer",
+          bio: "Graduate in information systems and technologies with experience in developing ERP solutions based on Odoo, demonstrating the ability to design tailored tools for industry needs.",
+          image: "/speakers-images/ayoub.png",
+        },
+        {
+          name: "Aymen Krioudj",
+          role: "IT Production & DevOps Engineer",
+          bio: "Computer Science Engineer with a passion for the practical application of technology, including significant experience in the development and delivery of high quality software product",
+          image: "/speakers-images/aymen.png",
+        },
+        {
+          name: "Yousra Farhani",
+          role: "ESI student, quantum computing research intern",
+          bio: "An ambitious Researcher with a research specialization in Quantum Computing focusing on Quantum Optimisation and QML",
+          image: "/speakers-images/yousraFarhani.jpg"
+        },
+         {
+          name: "Redha Amirouche",
+          role: "SAP Consultant at KPMG France",
+          bio: "Experienced with ABAP, Fiori, CAP, SAP BTP, SAP HANA, JavaScript,",
+          image: "/speakers-images/redha.jpg",
+        },
+        {
+          name: "Souhaib Zouambia",
+          role: "Software Engineer, Github Campus Expert ",
+          bio: "A computer science student passionate about developing creative web applications, exploring data, and continuously learning software engineering and AI to enhance skills and knowledge.",
+          image: "/speakers-images/sohaib.jpg",
+        },
+      ],
+
+    },
+    {
+      id: 9,
+      title: "Dev Fest 2021",
+      theme: "",
+      date: "2021-11-18",
+      time: "Whole day (for 3 days)",
+      location: "Fully Online",
+      attendees: 38,
+      maxAttendees: 50,
+      mission: "To inspire and empower aspiring coders, especially women, by providing an engaging competitive programming environment that enhances skills, fosters creativity, and celebrates diversity in technology.",
+      description: "WTM Algiers and GDG celebrate Ada Lovelace Day with a competitive programming event featuring workshops, talks, and a hackathon to inspire and empower the tech community.",
+      fullDescription: `
+        <p>WTM Algiers, in collaboration with GDG, co-organized DevFest, a major annual tech event that brought together developers, students, and professionals. As part of the program, they celebrated Ada Lovelace Day, an occasion dedicated to honoring the contributions of women in technology. The celebration featured a competitive programming competition, along with engaging workshops, insightful talks, and a hackathon, all aimed at enhancing programming skills, fostering creativity, and inspiring the community to explore the vast possibilities of computer science.</p>
+        <h3><strong>What is Ada Lovelace Day?</strong></h3>
+        <p>Ada Lovelace Day is an international celebration honoring Ada Lovelace, widely regarded as the first computer programmer. It highlights the achievements of women in STEM and encourages participation and recognition in technology and science fields.</p>
+        <br>
+        <h3><strong>Ada Lovelace Challenge: Ada Lovelace Track</strong></h3>
+        <h4><strong>Date:</strong> 19 November 2021</h4>
+        <h4><strong>Time:</strong> 5 PM - 11 PM</h4>
+        <h4><strong>Location:</strong> On HackerRank</h4>
+        <br>
+      <h4><strong>Agenda workshops Ada Lovelace</strong></h4>
+          <p><strong>november 19, 2021</strong></p>
+          <div style="display:flex; gap:20px; align-items:center; margin-top:5px">
+            <p style="background-color:#16E7B4; padding:5px; color:white; border-radius:10px">5:00 PM - 11:00 PM</p>
+            <p>Launch of the Ada Lovelace challenge</p>
+          </div>
+          <div style="display:flex; gap:20px; align-items:center; margin-top:10px">
+            <p style="background-color:#16E7B4; padding:3px; color:white; border-radius:10px">11:00 PM - 12:00 AM</p>
+            <p>Solutions submission</p>
+          </div>
+
+        `
+      ,
+      image: "/general-images/devfest21.jpg",
+      images: ["/general-images/devfest-mem1.png", "/general-images/devfest-mem2.png", "/general-images/devfest-mem3.png", "/general-images/devfest-mem4.png", "/general-images/devfest21.png"],
+      registrationOpen: false,
+      agenda: [
+  { "time": "4:30 pm - 6:00 pm", "activity": "Check in" },
+  { "time": "6:00 pm - 6:30 pm", "activity": "Opening ceremony" },
+  { "time": "6:30 pm - 7:00 pm", "activity": "Hackathon’s presentation" },
+  { "time": "7:00 pm - 7:30 pm", "activity": "Ice breaking" },
+  { "time": "7:00 pm - 7:45 pm", "activity": "Future of the web platform" },
+  { "time": "8:00 pm - 8:45 pm", "activity": "Developer Productivity engineering: apps for low end devices and low connectivity environment" },
+  { "time": "8:00 pm - 9:00 pm", "activity": "Dinner" },
+  { "time": "9:00 pm - 10:00 pm", "activity": "Introduction to AI applications with SalesForce Einstein" },
+  { "time": "10:00 pm - 11:00 pm", "activity": "Mentoring session" },
+
+  { "time": "8:00 am - 9:00 am", "activity": "Breakfast" },
+  { "time": "9:00 am - 10:00 am", "activity": "Mentoring session" },
+  { "time": "10:00 am - 12:30 pm", "activity": "Workshop: MLkit for developers" },
+  { "time": "12:30 pm - 3:00 pm", "activity": "Prayer time + lunch" },
+  { "time": "3:00 pm - 5:00 pm", "activity": "Workshop: from model to production" },
+  { "time": "6:00 pm - 7:00 pm", "activity": "Reinforcement learning a new breed of ML project" },
+  { "time": "6:00 pm - 7:00 pm", "activity": "Dive deep in flutter" },
+  { "time": "6:00 pm - 7:00 pm", "activity": "How to navigate the ocean of UX" },
+  { "time": "7:00 pm - 7:45 pm", "activity": "Auto ML - A new algorithmic age for ML" },
+  { "time": "8:00 pm - 9:00 pm", "activity": "Impactful AI" },
+  { "time": "8:30 pm - 9:30 pm", "activity": "Dinner" },
+  { "time": "9:00 pm - 9:45 pm", "activity": "DevOps at Netflix" },
+  { "time": "9:45 pm - 10:45 pm", "activity": "Distributed ML" },
+
+  { "time": "8:00 am - 9:00 am", "activity": "Breakfast" },
+  { "time": "9:00 am - 10:00 am", "activity": "Mentoring session: Public speaking" },
+  { "time": "12:00 pm", "activity": "Deadline of submissions" },
+  { "time": "12:00 pm - 1:30 pm", "activity": "Lunch break" },
+  { "time": "1:30 pm - 4:30 pm", "activity": "Presentation of solutions" },
+  { "time": "5:00 pm - 6:30 pm", "activity": "Closing ceremony" }
+],
+      impact: {
+        participants: 36,
+        totalProjectsSubmitted: 11,
+        // careerPivots: 15,
+        // certificationsPursued: 25,
+        // newConnections: 30,
+        // jobPlacements: 8,
+        // feedback: {
+        //   rating: 4.7,
+        //   testimonials: [
+        //     "Opened my eyes to cybersecurity opportunities!",
+        //     "The hands-on exercises were incredibly valuable.",
+        //     "Great introduction to a complex field.",
+        //   ],
+        // },
+      },
+      speakers: [
+        {
+          name: "Farhi Ayoub",
+          role: "Digital marketing expert",
+          bio: "Digital marketing expert and stem teacher",
+          image: "/speakers-images/farhi.jpg",
+        },
+        {
+          name: "Djamel Rassim Lamouri",
+          role: "M.Sc Student in DS & AI @ INP-Ensimag",
+          bio: "M.Sc. Student in Data Science & Artificial Intelligence at INP-Ensimag, passionate about solving real-world problems through machine learning, data-driven insights, and innovative AI solutions.",
+          image: "/speakers-images/lamouri.jpg"
+        },
+        {
+          name: "Asmaa Haidour",
+          role: "Data Product Definition Analyst chez Amadeus",
+          bio: "Enthusiastic about business needs analysis, dedicated to turning operational challenges into effective IT solutions.",
+          image: "/speakers-images/asmaa.jpg",
+        },
+        {
+          name: "Anis Rouane",
+          role: "Java/JS Fullstack Engineer",
+          bio: "Passionate about problem-solving through algorithms and turning ideas into programs across various languages and paradigms.",
+          image: "/speakers-images/anis.jpg",
+        },
+        {
+          name: "Melissa Boutata",
+          role: "Computer Science engineer, Data Engineer, Building Big Data solutions",
+          bio: "Computer Science Engineer and Data Engineer, building efficient Big Data solutions.",
+          image: "/speakers-images/melissa.jpg",
+        },
+        {
+          name: "Paul Kinlan",
+          role: "Lead for Web and Chrome Developer Relations @ Google",
+          bio: "An experienced Engineering and Developer Relations leader on Chrome. Passionate about the web the Web and enabling developers and businesses to create sites, apps and products that delight their users and push the capabilities of what we think is possible with technology today.",
+          image: "/speakers-images/paul.jpg"
+        },
+        {
+          name: "Justin Reock",
+          role: "Deputy CTO at DX",
+          bio: "Focused on transforming businesses through developer productivity theory, developer experience optimization, generative AI research, technical leadership, modern devops and platform engineering methodologies, writing, public speaking, training, and enablement.",
+          image: "/speakers-images/justin.jpg",
+        },
+        {
+          name: "Abdelghani Lahbib",
+          role: "Salesforce Consultant",
+          bio: "Salesforce Consultant",
+          image: "/speakers-images/lahbib.jpg",
+        },
+        
+        {
+          name: "Amine Kerkeni",
+          role: "Head of Engineering chez InstaDeep",
+          bio: "YSpecialized in software team management, embedded systems design, and embedded Linux solutions.",
+          image: "/speakers-images/amine.jpg",
+        },
+        {
+          name: "Hadjer Benmeziane",
+          role: "PhD in AutoML, Founder of School of AI Algiers, IBM Research Scientist",
+          bio: "Passionate about AI, especially Deep Learning, I spend my free time exploring and building models, and sharing knowledge through workshops.",
+          image: "/speakers-images/hadjerBenmeziane.jpg"
+        },
+        {
+          name: "Karim Beguir",
+          role: "Co-Founder & CEO at InstaDeep, Ex Google Machine Learning Developer Expert",
+          bio: "Co-founder & CEO of InstaDeep, former Google ML Developer Expert.",
+          image: "/speakers-images/karim.jpg"
+        },
+        {
+          name: "Tejas Chopra",
+          role: "Netflix | EnsolAI | Sustainability Advocate | 2x TEDx",
+          bio: "Passionate advocate for sustainable computing, sharing knowledge and insights on AI, cloud, distributed storage, and engineering culture.",
+          image: "/speakers-images/tejas.jpg"
+        },
+        {
+          name: "Azzedine Chenine",
+          role: "Senior Research Engineer @ InstaDeep, Google Developer Expert in ML, Google for Startups Accelerator Mentor",
+          bio: "Applied AI Research Engineer with expertise in machine learning and scalable distributed systems, specializing in deep reinforcement learning for solving complex industry challenges.",
+          image: "/speakers-images/chenine.jpg"
+        }
+      ],
+      mentors: [
+        {
+          name: "Abdelmadjid Bouikken Bahi Amer",
+          role: "Software Engineer",
+          bio: "Software engineer with a Master's in Computer Software Engineering, experienced in developing mobile and web applications using Kotlin, Spring, Flutter, and React.",
+          image: "/speakers-images/bahi.png",
+        },
+        {
+          name: "Ayoub Benaissa",
+          role: "Senior Software Engineer at Zama",
+          bio: "A polyglot software engineer with a strong background in the crypto and privacy domains, holding a Master's degree in Computer Science.",
+          image: "/speakers-images/ayoubB.png"
+        },
+        {
+          name: "Mehdi Djought",
+          role: "Artificial Intelligence & Data science engineer",
+          bio: "",
+          image: "/speakers-images/mehdi.png",
+        },
+        {
+          name: "Nassim Meridja",
+          role: "MEng in Computer Systems | Artificial Intelligence | ",
+          bio: "Computer Scientist and Engineer, passionate about technology namely AI and Blockchain, looking forward to opportunities to apply my expertise and collaborate on impactful projects.",
+          image: "/speakers-images/nassim.png"
+        },
+        {
+          name: "Israa Hamdine",
+          role: "Machine Learning Engineer",
+          bio: "Graduated student from ESI and Machine Learning Engineer.",
+          image: "/speakers-images/israa.png",
+        },
+        {
+          name: "Riad Bensalem",
+          role: "Senior IT Consultant at Octodet & Elastic",
+          bio: "Senior IT Consultant at Elastic, specializing in Observability and Security projects, with expertise in consultancy, Elastic Stack implementation, and data ingestion pipeline development for varied business needs.",
+          image: "/speakers-images/riad.jpg",
+        },
+        {
+          name: "Jihed Hannachi",
+          role: "Co-Founder @MajestEYE",
+          bio: "Skilled in strategy, digital transformation, and advanced analytics, with experience driving impactful business and technology initiatives.",
+          image: "/speakers-images/jihed.png"
+        },
+         {
+          name: "Redha Amirouche",
+          role: "SAP Consultant at KPMG France",
+          bio: "Experienced with ABAP, Fiori, CAP, SAP BTP, SAP HANA, JavaScript,",
+          image: "/speakers-images/redha.jpg",
+        },
+        {
+          name: "Bachir Chahrour",
+          role: "Job interview coaching, Business English training",
+          bio: "Experienced coach and language tutor dedicated to helping individuals improve their communication skills and achieve professional growth.",
+          image: "/speakers-images/bachir.png",
+        },
+        {
+          name: "DjamalEddine Belilet",
+          role: "Senior Software Engineer",
+          bio: "Polyglot Senior Software Engineer with 7+ years of experience architecting and delivering scalable, high-performance software solutions. Led development of several fully greenfield web/mobile apps, specializing in TypeScript, React and NodeJS.",
+          image: "/speakers-images/belilet.jpg",
+        },
+        {
+          name: "Mohamed Habi",
+          role: "Data Scientist @Amadeus, MSc Grenoble INP ENSIMAG, Eng ESI",
+          bio: "Recent graduate in Computer Science, currently pursuing a Master's in Data Science and AI. Gaining hands-on experience through a Data Science internship in France.",
+          image: "/speakers-images/habi.jpg",
+        },
+                {
+          name: "Mohamed Aymen Bergadi",
+          role: "Cloud Data Engineer @Keyrus, Azure & GCP Certified Data Engineer",
+          bio: "Cloud Data Engineer @Keyrus | Azure & GCP Certified Data Engineer, Certified Snowflake, Databricks Experienced in the entire data lifecycle, skilled in programming, data manipulation, machine learning, and big data technologies.",
+          image: "/speakers-images/bergadi.jpg",
+        },
+      ],
+      highlights:[
+        "12 mentor",
+        "15 speaker",
+        "36 student",
+      ]
     },
   ] as Event[],
 }

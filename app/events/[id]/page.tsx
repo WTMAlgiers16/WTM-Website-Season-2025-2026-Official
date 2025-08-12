@@ -83,7 +83,7 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                     </div>
                   </div>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{event.title}</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{event.title} · {event.theme}</h1>
                 <p className="text-xl text-white/90 mb-6">{event.mission}</p>
                 <div className="flex items-center gap-6">
                   <div className="flex items-center gap-2 text-white">
@@ -264,6 +264,12 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                         <div className="text-center">
                           <div className="text-3xl font-bold text-[#2B6ED1] mb-2">{event.impact.mentorshipPairs}</div>
                           <div className="text-sm text-gray-600">Mentorship Pairs</div>
+                        </div>
+                      )}
+                      {event.impact.totalProjectsSubmitted && (
+                        <div className="text-center">
+                          <div className="text-3xl font-bold text-[#2B6ED1] mb-2">{event.impact.totalProjectsSubmitted}</div>
+                          <div className="text-sm text-gray-600">Submitted projects</div>
                         </div>
                       )}
                     </div>
