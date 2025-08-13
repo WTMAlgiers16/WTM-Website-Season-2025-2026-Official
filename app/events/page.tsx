@@ -251,6 +251,12 @@ export default function EventsPage() {
                             <div className="font-bold text-[#03BDA3]">{event.impact.participants}</div>
                             <div className="text-gray-600">Participants</div>
                           </div>
+                          {event.impact.totalProjectsSubmitted && (
+                            <div className="text-center">
+                              <div className="font-bold text-[#03BDA3]">{event.impact.totalProjectsSubmitted}</div>
+                              <div className="text-gray-600">Projects submitted</div>
+                            </div>
+                          )}
                           {event.impact.newConnections && (
                             <div className="text-center">
                               <div className="font-bold text-[#03BDA3]">{event.impact.newConnections}</div>

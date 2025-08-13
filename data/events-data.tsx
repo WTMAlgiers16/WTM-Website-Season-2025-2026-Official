@@ -59,87 +59,7 @@ export interface Event {
 
 export const eventsData = {
   featured: {
-    id: 100,
-    title: "Women in AI Summit 2024",
-    date: "2024-12-15",
-    time: "9:00 AM - 6:00 PM",
-    location: "Tech Hub, San Francisco",
-    attendees: 250,
-    maxAttendees: 300,
-    mission: "Empowering women to lead in artificial intelligence and machine learning",
-    description:
-      "Join us for a full-day summit featuring keynotes from leading women in AI, hands-on workshops, and networking opportunities. This is our biggest event of the year!",
-    fullDescription: `
-      <p>The Women in AI Summit 2024 is our flagship event, bringing together the brightest minds in artificial intelligence and machine learning. This comprehensive day-long summit is designed to inspire, educate, and connect women at all stages of their AI journey.</p>
-      
-      <h3>What to Expect</h3>
-      <p>Our summit features a carefully curated program that balances technical depth with practical insights. You'll hear from industry leaders who are shaping the future of AI, participate in hands-on workshops that will enhance your skills, and network with like-minded professionals who share your passion for technology.</p>
-      
-      <h3>Key Highlights</h3>
-      <ul>
-        <li><strong>8 Keynote Speakers:</strong> Featuring CTOs, AI researchers, and startup founders</li>
-        <li><strong>15 Technical Workshops:</strong> From beginner-friendly introductions to advanced deep learning</li>
-        <li><strong>Startup Pitch Competition:</strong> Watch innovative AI startups compete for funding</li>
-        <li><strong>Networking Lunch:</strong> Connect with 300+ attendees in a relaxed setting</li>
-        <li><strong>Career Fair:</strong> Meet with top tech companies actively hiring</li>
-        <li><strong>Panel Discussions:</strong> Ethics in AI, Future of Work, and Women Leadership</li>
-      </ul>
-      
-      <h3>Who Should Attend</h3>
-      <p>This event is perfect for software engineers, data scientists, product managers, researchers, students, and anyone interested in the intersection of AI and gender diversity in tech.</p>
-    `,
-    image: "/placeholder.svg?height=400&width=800",
-    images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
-    highlights: ["8 Keynote Speakers", "15 Technical Workshops", "Startup Pitch Competition", "Networking Lunch"],
-    registrationOpen: true,
-    registrationDeadline: "2024-12-10",
-    partners: [
-      {
-        name: "TechCorp AI",
-        logo: "/placeholder.svg?height=80&width=120",
-        role: "Title Sponsor",
-        description: "Leading AI research company providing keynote speakers and workshop facilitators",
-      },
-      {
-        name: "DataFlow Solutions",
-        logo: "/placeholder.svg?height=80&width=120",
-        role: "Venue Partner",
-        description: "Providing the state-of-the-art venue and technical infrastructure",
-      },
-    ],
-    agenda: [
-      { time: "9:00 AM", activity: "Registration & Welcome Coffee" },
-      { time: "9:30 AM", activity: "Opening Keynote: The Future of AI" },
-      { time: "10:30 AM", activity: "Workshop Session 1" },
-      { time: "12:00 PM", activity: "Networking Lunch" },
-      { time: "1:30 PM", activity: "Panel: Women Leading AI Innovation" },
-      { time: "2:30 PM", activity: "Workshop Session 2" },
-      { time: "4:00 PM", activity: "Startup Pitch Competition" },
-      { time: "5:30 PM", activity: "Closing Remarks & Networking" },
-    ],
-    speakers: [
-      {
-        name: "Dr. Sarah Kim",
-        role: "Chief AI Officer at TechCorp",
-        bio: "Leading AI research with 15+ years experience",
-        image: "/placeholder.svg?height=150&width=150",
-      },
-      {
-        name: "Maria Santos",
-        role: "Founder of AI Startup",
-        bio: "Serial entrepreneur in the AI space",
-        image: "/placeholder.svg?height=150&width=150",
-      },
-    ],
-  },
-
-  events: [
-    {
-  "id": 1,
+    "id": 1,
   "title": "IWD’24 Algiers",
   "theme": "Impact the future",
   "date": "2024-05-24",
@@ -216,11 +136,10 @@ export const eventsData = {
       "image": "/speakers-images/hadjerBenmeziane.jpg"
     }
   ]
-    },
+  },
 
+  events: [
     {
-
-
   "id": 2,
   "title": "octoPink 2023",
   "date": "2023-10-27",
@@ -1005,8 +924,8 @@ export const eventsData = {
       date: "2021-11-18",
       time: "Whole day (for 3 days)",
       location: "Fully Online",
-      attendees: 38,
-      maxAttendees: 50,
+      // attendees: 38,
+      // maxAttendees: 50,
       mission: "To inspire and empower aspiring coders, especially women, by providing an engaging competitive programming environment that enhances skills, fosters creativity, and celebrates diversity in technology.",
       description: "WTM Algiers and GDG celebrate Ada Lovelace Day with a competitive programming event featuring workshops, talks, and a hackathon to inspire and empower the tech community.",
       fullDescription: `
@@ -1234,7 +1153,7 @@ export const eventsData = {
                 {
           name: "Mohamed Aymen Bergadi",
           role: "Cloud Data Engineer @Keyrus, Azure & GCP Certified Data Engineer",
-          bio: "Cloud Data Engineer @Keyrus | Azure & GCP Certified Data Engineer, Certified Snowflake, Databricks Experienced in the entire data lifecycle, skilled in programming, data manipulation, machine learning, and big data technologies.",
+          bio: "Cloud Data Engineer @Keyrus, Azure & GCP Certified Data Engineer, Certified Snowflake, Databricks Experienced in the entire data lifecycle, skilled in programming, data manipulation, machine learning, and big data technologies.",
           image: "/speakers-images/bergadi.jpg",
         },
       ],
@@ -1243,6 +1162,552 @@ export const eventsData = {
         "15 speaker",
         "36 student",
       ]
+    },
+    {
+      id: 10,
+      title: "IWD'20",
+      theme: "",
+      date: "2020-03-06",
+      time: "Whole day (for 2 days)",
+      location: "ENP Algiers",
+      // attendees: 38,
+      // maxAttendees: 50,
+      mission: "To inspire and empower women in technology by providing hands-on learning, collaborative challenges, and diverse tracks that encourage innovation, problem-solving, and personal growth.",
+      description: "In collaboration with School of AI, IWD brought together women in tech for an inspiring day of learning and innovation.",
+      fullDescription: `
+        <p>This year’s edition of IWD is all about training and helping the developer community evolve while creating opportunities for women to explore their passions in tech. In collaboration with School of AI, participants will dive into different tracks, Mobile Development, Web Development, AI, and Programming for Non-Programmers, while engaging in inspiring discussions on technology, innovation, and emerging products.
+A major highlight is the IWD Ideathon, a dynamic idea marathon where participants from diverse disciplines use design thinking and innovative learning practices to tackle real-world problems. In a competitive yet collaborative atmosphere, they will brainstorm, ideate, and propose impactful solutions that could shape the future.</p>
+        <h3><strong>Workshops</strong></h3>
+        <ul>
+          <li>OOP & java</li>
+          <li>AI for non-programmers</li>
+          <li>Gatsby </li>
+          <li>Flutter </li>
+          <li>Artificial Intelligence</li>
+        </ul>
+        <br>
+        <h3><strong>Talks</strong></h3>
+        <ul>
+          <li>CyberSecurity in algeria: are you even concerned</li>
+          <li>Zoom in modern web / mobile development</li>
+          <li>How AI and big data are shaping our vworld view</li>
+          <li>Dare to change the your career path?</li>
+          <li>Designning Human</li>
+        </ul>
+        `
+      ,
+      image: "/general-images/iwd20.png",
+      images: ["/general-images/iwd20-mem1.png", "/general-images/iwd20-mem2.png", "/general-images/iwd20-mem3.png", "/general-images/iwd20-mem4.png"],
+      registrationOpen: false,
+      highlights:[
+        "9 mentors",
+        "9 trainers",
+        "5 partners",
+        "5 speakers",
+        "4 panels"
+      ],
+      partners:[
+        {
+          name: "ENP incubator",
+          logo: "/partners-images/djezzy.png",
+          role: "Event Partner",
+          description: "providing partnership and support for the event",
+        },
+        {
+          name: "GitHub Education",
+          logo: "/partners-images/gh-education.png",
+          role: "Sponsor",
+          description: "offering students free access to the GitHub Student Developer Pack",
+        },
+        {
+          name: "Confédération Générale des entreprise Algériennes",
+          logo: "/partners-images/cgea.jpeg",
+          role: "Sponsor",
+          description: "osupporting the success of IWD20 through their generosity and partnership.",
+        },
+        {
+          name: " TECHNO stationery",
+          logo: "/partners-images/techno.png",
+          role: "Sponsor",
+          description: "providing resources",
+        },
+        {
+          name: "School of AI Algiers",
+          logo: "/partners-images/soai.jpg",
+          role: "Co-organizator",
+          description: "contributing expertise by delivering an Artificial Intelligence workshop on convolutional neural networks",
+        },
+      ],
+      speakers: [
+        {
+          name: "Amina Meherhera",
+          role: "Squad Lead at NIQ for Digital Commerce, DevOps Engineer",
+          bio: "Computer science engineer passionate about DevOps, Cloud Computing and Big Data. Always hardworking, ambitious, energetic and eager to learn new skills.",
+          image: "/speakers-images/amina.png",
+        },
+        {
+          name: "DjamalEddine Belilet",
+          role: "Senior Software Engineer",
+          bio: "Polyglot Senior Software Engineer with 7+ years of experience architecting and delivering scalable, high-performance software solutions. Led development of several fully greenfield web/mobile apps, specializing in TypeScript, React and NodeJS.",
+          image: "/speakers-images/belilet.jpg",
+        },
+        {
+          name: "Hicham Bouzara",
+          role: "Software Engineer @ Leroy Merlin ",
+          bio: "Specializes in developing and managing web applications with a focus on functionality, design, and continuous improvement of digital products.",
+          image: "/speakers-images/hicham.jpg",
+        },
+        {
+          name: "Amel Bencheikh El Hocine",
+          role: "Sustainability Communications Senior Director Europe at The Coca-Cola Company",
+          image: "/speakers-images/amelB.jpg",
+        },
+      ],
+      mentors: [
+        {
+          name: "Fayçal ZEMMOUR",
+          role: "Engineer by training, PMO and planner, expert instructor in project management.",
+          image: "/speakers-images/faycal.jpg",
+        },
+        {
+          name: "Walid FELLAH",
+          role: "Head of Design @Yassir",
+          bio: "Passionate about creating products and systems that align user needs with business goals, delivering seamless and high-quality experiences.",
+          image: "/speakers-images/walid.jpg"
+        },
+        {
+          name: "Feriel Oucif",
+          role: "Social Media 360°, Digital Strategy & AI.",
+          bio: "Specializes in inbound marketing, AI-driven content, social media, and performance reporting, helping brands turn data into strategic actions.",
+          image: "/speakers-images/ferial.png",
+        },
+        {
+          name: "Ikram Loubna Nour",
+          role: "Serial Entrepreneur",
+          bio: "Marketing and brand specialist with 10 years’ experience, combining market insight and strategy to drive consistent business growth.",
+          image: "/speakers-images/ikram.png",
+        },
+        {
+          name: "Amel Delli",
+          role: "Electrical Engineering | Energy Management | Sustainability",
+          bio: "Multilingual Electrical Engineer, with solid leadership and communication skills. ",
+          image: "/speakers-images/amelD.jpg"
+        },
+         {
+          name: "Mohamed Redha Ouaset",
+          role: "Business Consultant, Start-up Advisor, TRAINER",
+          bio: "With 10 years of multidisciplinary expertise, today I assist businesses and start-ups in expanding their operations through creative strategies.",
+          image: "/speakers-images/ouaset.jpg",
+        },
+        {
+          name: "Bachir Achache",
+          role: "CEO & Directeur Marketing et commerce international",
+          image: "/speakers-images/bachirA.jpg",
+        },
+        {
+          name: "Leila Benyoucef",
+          role: "Founder of a Startup, Kiddy Sorties & Stories, Kids Leisure, Woman In Tech",
+          bio: "Passionate about entrepreneurship, innovation, and marketing, inspiring others to pursue and achieve their goals.",
+          image: "/speakers-images/leila.png",
+        },
+        {
+          name: "Souad Benmeziane",
+          role: "Cyber Security Consultant & Instructor",
+        },
+      ],
+      trainers:[
+        {
+          name: "Nour ElHassan",
+          role: "Advanced level in OOP",
+          image: "/speakers-images/nour.png",
+        },
+        {
+          name: "Sihem Bouhenniche",
+          role: "Cybersecurity and Privacy PhD researcher, Android device fingerprinting",
+          bio: "Software engineer and master’s graduate from ESI Algiers with experience in frontend development, interface redesign, and e-commerce projects.",
+          image: "/speakers-images/sihem.jpg",
+        },
+        {
+          name: "Nour Elyakine Dif",
+          role: "Electrical and electronic enginnering licence degree",
+          image: "/speakers-images/dif.png",
+        },
+        {
+          name: "Amina Tadjer",
+          role: "Master AI, Systems, Data @ PSL Paris Dauphine, Software engineer, Looking for job in AI, Data",
+          image: "/speakers-images/aminaT.jpg",
+        },
+        {
+          name: "Meyssa Zouambi",
+          role: "Working on the automatic configuration of deep learning models.",
+          image: "/speakers-images/meyssa.jpg",
+        },
+        {
+          name: "Hadjer Benmeziane",
+          role: "PhD in AutoML, Founder of School of AI Algiers || IBM Research Scientist",
+          bio: "Passionate about AI, especially Deep Learning, I spend my free time exploring and building models, and sharing knowledge through workshops.",
+          image: "/speakers-images/hadjerBenmeziane.jpg"
+        },
+        {
+          name: "Hadjer Ishak Boushaki",
+          role: "Data Consultant @ Saegus, Data Science & AI",
+          image: "/speakers-images/hadjer.jpg"
+        },
+        {
+          name: "Narimane Hennouni",
+          role: "Generative AI Solutions Architect @NVIDIA, WomenTech Makers Ambassador, 2021 Generation Google Scholar, Optimistic and always eager to learn more.",
+          image: "/speakers-images/narimane.jpg"
+        },
+        {
+          name: "Celine Serbouh",
+          role: "Autonomous vehicles testing engineer @UTAC, PhD student @CNAM",
+          bio:"Passionate about artificial intelligence, especially deep learning.",
+          image: "/speakers-images/celine.jpg"
+        },
+      ],
+    },
+    {
+      id: 11,
+      title: "IWD'21",
+      theme: "",
+      date: "2021-04-04",
+      time: "Every morning and evening (till april 10)",
+      location: "ESI Algiers",
+      // attendees: 38,
+      // maxAttendees: 50,
+      mission: "To empower and inspire women in technology by providing a platform for knowledge sharing, skill development, and community building through engaging talks, hands-on workshops, and meaningful networking opportunities.",
+      description: "IWD’21 brings together a series of inspiring talks and interactive workshops, creating a space for learning, collaboration, and celebrating women’s impact in the tech industry.",
+      fullDescription: `
+        <p>celebration of women’s achievements and contributions in technology, hosted by WTM Algiers. This edition will feature a series of inspiring talks and interactive workshops led by industry experts, offering participants valuable insights, practical skills, and opportunities to connect with like-minded individuals. It’s a space for learning, empowerment, and fostering an inclusive tech community.</p>
+        `
+      ,
+      image: "/general-images/iwd21.png",
+      images: ["/general-images/iwd21-mem1.png", "/general-images/iwd21-mem2.png"],
+      registrationOpen: false,
+      agenda:[
+          {
+    "time": "April 4th, 7:00 PM",
+    "activity": "DevOps and pre-requirements"
+  },
+  {
+    "time": "April 5th, 7:00 PM",
+    "activity": "Get the courage to start a research career"
+  },
+  {
+    "time": "April 6th, 7:00 PM",
+    "activity": "Get the courage to study abroad"
+  },
+  {
+    "time": "April 7th, 7:00 PM",
+    "activity": "Get the courage to jump or start with kiddy stories"
+  },
+  {
+    "time": "April 8th, 7:00 PM",
+    "activity": "Welcoming more women in tech"
+  },
+    {
+    "time": "April 8th, 8:00 PM",
+    "activity": "What do they not teach you in engineering school"
+  },
+  {
+    "time": "April 9th, 9:00 AM",
+    "activity": "Introduction to ML"
+  },
+  {
+    "time": "April 9th, 9:00 AM",
+    "activity": "Introduction to Cybersecurity"
+  },
+  {
+    "time": "April 9th, 9:00 AM",
+    "activity": "Software architecture"
+  },
+  {
+    "time": "April 10th, 9:00 AM",
+    "activity": "Get the courage to learn UI/UX"
+  },
+  {
+    "time": "April 10th, 9:00 AM",
+    "activity": "Let’s talk flutter"
+  },
+  {
+    "time": "April 10th, 9:00 AM",
+    "activity": "Modern blogs with modern Technologies"
+  }
+      ],
+      speakers: [
+        {
+          name: "Leila Benyoucef",
+          role: "Founder of a Startup, Kiddy Sorties & Stories, Kids Leisure, Woman In Tech",
+          bio: "Passionate about entrepreneurship, innovation, and marketing, inspiring others to pursue and achieve their goals.",
+          image: "/speakers-images/leila.png",
+        },
+        {
+          name: "Fatima Zohra Benhamida",
+          role: "Technical Product Manager at Dolead",
+          bio: "Product manager with a background in higher education, creating user-focused digital products through strategic thinking, communication, and collaboration.",
+          image: "/speakers-images/fatima.jpg",
+        },
+        {
+          name: "Ikram Manseri",
+          role: "Senior Site Reliability Engineer @Doctolib",
+          image: "/speakers-images/ikram.jpg",
+        },
+        {
+          name: "Kahina Fekir",
+          role: "Application Systems Manager at Leroy Merlin",
+          image: "/speakers-images/kahina.jpg",
+        },
+        {
+          name: "Amine Riad Remache",
+          role: "Software Engineer II @ AWS | Co-host @ Wled Horma Podcast",
+          bio:"An eternal student, blogger, and engineer, passionate about cutting-edge technologies and solving real-world problems with a particular interest in computer vision, autonomous systems, and ADAS.",
+          image: "/speakers-images/amineR.jpg",
+        },
+      ],
+      trainers:[
+        {
+          name: "Asmaa Haidour",
+          role: "Data Product Definition Analyst chez Amadeus",
+          bio: "Enthusiastic about business needs analysis, dedicated to turning operational challenges into effective IT solutions.",
+          image: "/speakers-images/asmaa.jpg",
+        },
+        {
+          name: "Aymen Berriche",
+          role: "Research Intern @Thales working on Unlearning",
+          bio: "Graduated ESI student and Research Intern at Thales, exploring Unlearning, AI Privacy, and NeuroAI.",
+          image: "/speakers-images/aymenB.jpg",
+        },
+        {
+          name: "Narimane Hennouni",
+          role: "Generative AI Solutions Architect @NVIDIA, WomenTech Makers Ambassador, 2021 Generation Google Scholar, Optimistic and always eager to learn more.",
+          image: "/speakers-images/narimane.jpg"
+        },
+        {
+          name: "Wassila Rania Harzali",
+          role: "IT and Cybersecurity Student USTHB",
+          bio:"A master degree student in Computer and Information systems security , devoted, innovative and passionate about Technology, Networking, Cybersecurity and always ready for new challenges.",
+          image: "/speakers-images/wassila.png"
+        },
+        {
+          name: "Yacine Benkaidali",
+          role: "Backend Engineer (CKAD, Golang)",
+          image: "/speakers-images/yacineB.jpg"
+        },
+        {
+          name: "Smail Kourta",
+          role: "Software Engineer @ Canonical",
+          bio:"Research engineer specializing in machine learning and reinforcement learning, with experience building high-performance data pipelines and tools for faster experimentation.",
+          image: "/speakers-images/smail.jpg"
+        },
+      ]
+    },
+
+     {
+      id: 12,
+      title: "Discode",
+      theme: "",
+      date: "2022-09-15",
+      time: "Weekly at 8:00 PM",
+      location: "Online on discord",
+      // attendees: 38,
+      // maxAttendees: 50,
+      mission: "To create a fun, consistent, and engaging environment where programmers can sharpen their problem-solving skills through weekly competitive programming challenges.",
+      description: "DisCode is a weekly 1-hour Discord competition with 3 puzzles to solve and a community to grow with.",
+      fullDescription: `
+      <p>DisCode is a weekly coding competition on our Discord community server, where participants tackle 3 puzzles in just 1 hour across three thrilling modes, Fastest Mode, Shortest Mode, and Reverse Mode. It’s the perfect way to sharpen problem-solving abilities, challenge yourself in different ways, and connect with fellow coding enthusiasts in a fun, competitive, and supportive environment. The activity also features <strong>Competitive Programming Sharing Experience</strong> with <i>Belgacem Nedjima</i>, offering participants valuable tips and insights to improve their performance.</p>
+        `
+      ,
+      image: "/general-images/discode.png",
+      registrationOpen: false,
+      speakers: [
+        {
+          name: "Belgacem Nedjima",
+          role: "Software Developer @ Odoo | Master's in Computer Science",
+          bio: "Software developer with a strong background in computer science and a passion for building scalable solutions using Python and modern development practices.",
+          image: "/speakers-images/leila.png",
+        },
+      ],
+      
+    },
+
+    {
+      id: 13,
+      title: "IoT Makers",
+      theme: "",
+      date: "2023-01-04",
+      time: "Every evening (till march 7th)",
+      location: "Online (On discord community server) and Onsite (ESI Algiers)",
+      // attendees: 38,
+      // maxAttendees: 50,
+      mission: "To empower technology enthusiasts by providing accessible, engaging, and practical knowledge about the Internet of Things through regular sessions and curated resources.",
+      description: "IoT Makers is a weekly learning journey into the world of the Internet of Things, combining informative posts with live sessions to enhance skills, inspire innovation, and connect passionate learners.",
+      fullDescription: `
+        <p>IoT Makers is designed for all IoT enthusiasts eager to explore, learn, and innovate in this rapidly evolving field. Each week, participants will gain access to insightful, informative posts covering the latest IoT trends, tools, and concepts, followed by a dedicated live session to dive deeper into the topic, exchange ideas, and practice hands-on skills.</p>
+        <br>
+        <p><strong>January 4, 2023 – 2:00 PM</strong> — Introduction to the Internet of Things: The key technology of a wireless sensor network (WSN)</p>
+        <p><strong>January 7, 2023 – 7:00 PM</strong> — Introduction to IoT device management: From industry and research perspectives</p>
+        <p><strong>February 4, 2023 – 7:00 PM</strong> — IoT applications transforming our lives: A glance at digital forming</p>
+        <p><strong>February 8, 2023 – 7:00 PM</strong> — TinyML, light machine learning for embedded systems</p>
+        <p><strong>On-site February 18, 2023 – 9:00 AM</strong> — Arduino</p>
+        <p><strong>On-site Workshop: March 7, 2023 – 1:30 PM</strong> — Getting started with Raspberry Pi</p>
+        <br>
+        <p>Whether you’re just starting your IoT journey or looking to sharpen your expertise, this program provides a structured and engaging pathway to boost your knowledge and connect with a community of like-minded innovators ready to shape the future.</p>
+        `
+      ,
+      image: "/general-images/iotMakers.png",
+      registrationOpen: false,
+      speakers: [
+        {
+          name: "Ahmed-Rafik-El Mehdi BAAHMED",
+          role: "Computer Systems Engineer, Doctoral Researcher (Ph.D Candidate) at CESI LINEACT, Computational Efficiency of Federated Learning techniques on Edge-Cloud Infrastructures",
+          image: "/speakers-images/ahmed.jpg",
+        },
+        {
+          name: "Amel Guittoum",
+          role: "Knowledge Graph Engineer @elevait",
+          bio: "Innovative Dr. engineer, specializing in Semantic Web technologies. Equipped with a strong foundation in computer science and a passion for advancing knowledge in the field of semantic web and linked data",
+          image: "/speakers-images/amelG.jpg",
+        },
+        {
+          name: "Kahina Ali Ahmed",
+          role: "Project Manager IT, CCTV, KNX, IoT, English Tutor",
+          image: "/speakers-images/kahinaA.jpg",
+        },
+      ],
+      trainers:[
+        {
+          name: "Lynda Belkessa",
+          role: "CS Eng. & MSc, PhD Candidate (CLEARDOC), MSCAA fellow, ETIC",
+          bio: "Computer Science engineer and master’s graduate specializing in Big Data, AI, and Software Engineering, currently pursuing a PhD as part of the European Commission’s CLEARDOC program.",
+          image: "/speakers-images/lyndaB.png",
+        },
+        {
+          name: "Mohamed Yanis Hiou ",
+          role: "Third Year Student, ELECTRO Club President ",
+          bio: "Automation & Control Systems Engineering student with interests spanning electronics, deep learning, computer vision, Python development, 3D design, web/app development, robotics, and AI.",
+          image: "/speakers-images/yanis.jpg",
+        },
+        {
+          name: "Mama saadia Benelhadj Djelloul",
+          role: "Backend Software Engineer | CS graduate from ESI-Algiers",
+          bio:"Computer science graduate specialized in Systems & Software Engineering, currently working as a Backend Software Engineer with a passion for software design and web development.",
+          image: "/speakers-images/mamaSaadia.png"
+        },
+      ],
+      highlights:[
+        "12 informative posts",
+      ]
+    },
+
+     {
+      id: 14,
+      title: "She Shares",
+      theme: "",
+      date: "2023-05-08",
+      time: "Every week at 8:00 PM (till may 25th)",
+      location: "On Google Meet",
+      attendees: 120,
+      maxAttendees: 150,
+      mission: "To create a safe and inspiring space where women can share personal experiences, exchange insights, and encourage one another by discussing real-life topics that matter.",
+      description: "A series of sessions where women openly discuss and share their personal journeys around specific themes, fostering community, learning, and mutual empowerment.",
+      fullDescription: `
+        <p>This event series is dedicated to amplifying women’s voices and experiences through engaging, theme-focused conversations. Each session features a woman sharing her story and perspective on a specific topic, aiming to inspire, connect, and empower the audience. From navigating burnout to balancing work and life, studying abroad, or returning to studies after years in the workforce, every story offers valuable lessons and encouragement for others in similar situations.</p>
+        <br>
+        <p><strong>May 8, 2023 – 8:00 PM</strong> — BURNOUT</p>
+        <p><strong>May 16, 2023 – 8:00 PM</strong> — Work-life balance</p>
+        <p><strong>May 22, 2023 – 8:00 PM</strong> — Studying/working abroad</p>
+        <p><strong>May 25, 2023 – 7:00 PM</strong> — Back to studies after years of professional experience</p>
+         `
+      ,
+      image: "/general-images/sheShares.png",
+      registrationOpen: false,
+      speakers: [
+        {
+          name: "Abir Hammache",
+          role: "Software developer",
+          bio: "Fullstack Engineer with a strong foundation in software development and over 5 years of professional experience designing and building consistent and scalable web applications.",
+          image: "/speakers-images/abir.jpg",
+        },
+        {
+          name: "Madjda Gheribi",
+          role: "Pre-sales Engineer @MajestEYE",
+          bio: "Believes in the power of experiential learning, fostering connections, and embracing opportunities that drive continuous growth.",
+          image: "/speakers-images/madjda.jpg",
+        },
+        {
+          name: "Nihad Mahouni",
+          role: "Data Analytics Consultant at EPAM Systems",
+          image: "/speakers-images/nihad.png",
+        },
+        {
+          name: "Asmaa Haidour",
+          role: "Data Product Definition Analyst chez Amadeus",
+          bio: "Enthusiastic about business needs analysis, dedicated to turning operational challenges into effective IT solutions.",
+          image: "/speakers-images/asmaa.jpg",
+        },
+      ],
+    },
+
+    {
+      id: 15,
+      title: "ARduino workshop",
+      theme: "",
+      date: "2019-08-17",
+      time: "9:00 AM - 4:00 PM",
+      location: "Centre de formation Eljinene",
+      // attendees: 120,
+      // maxAttendees: 150,
+      mission: "To inspire and empower women to explore technology, electronics, and programming by providing a hands-on introduction to Arduino, fostering creativity, problem-solving skills, and confidence in STEM.",
+      description: "A one-day, interactive workshop where women learn the fundamentals of Arduino, electronics, and coding, creating real projects while gaining practical skills and confidence in technology.",
+      fullDescription: `
+        <p>This one-day Arduino workshop is designed specifically for women who are curious about technology and eager to learn hands-on electronics and programming. Participants will be guided through the basics of Arduino, including understanding microcontrollers, connecting sensors and actuators, and writing simple programs to control lights, motors, and other components.</p>
+        `
+      ,
+      image: "/general-images/arduino.png",
+      images: ["/general-images/arduino-mem1.png", "/general-images/arduino-mem2.png", "/general-images/arduino-mem3.png"],
+      agenda:[
+        {
+      "time": "9:00am - 9:45am",
+      "activity": "Basic Electronics"
+    },
+    {
+      "time": "9:55am - 11:00am",
+      "activity": "Arduino IDE, Functions & Commands"
+    },
+    {
+      "time": "11:00am - 11:30am",
+      "activity": "First Quiz"
+    },
+    {
+      "time": "11:30am - 12:15pm",
+      "activity": "DC/Servo Motors & LCD Implementation"
+    },
+    {
+      "time": "12:15pm - 1:15pm",
+      "activity": "Lunch Time"
+    },
+    {
+      "time": "1:15pm - 1:45pm",
+      "activity": "Second Quiz: Simulation with Tinkercad"
+    },
+    {
+      "time": "1:50pm - 2:50pm",
+      "activity": "First Project: 'Good Morning LCD'"
+    },
+    {
+      "time": "3:00pm - 4:00pm",
+      "activity": "Second Project: 'Let Your Robot Imitate You'"
+    }
+      ],
+      registrationOpen: false,
+      trainers: [
+        {
+          name: "Rayene Bech",
+          role: "GenAI Engineer, Tietoevry, University of Helsinki",
+          bio: "Experienced in software development and Generative AI, working with LLMs, knowledge graphs, and Agentic AI across multiple domains. Currently pursuing a master’s in Data Science.",
+          image: "/speakers-images/bech.jpg",
+        },
+      ],
     },
   ] as Event[],
 }

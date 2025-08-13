@@ -6,35 +6,28 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const groupPhotos = [
   {
     id: 1,
-    image: "/general-images/WTMLibMentors.png",
-    title: "WTMLIB",
+    image: "/general-images/carousel-1devfest22.png",
+    title: "DevFest 2022",
     description: "Mentors and mentees from our WTMLib event",
   },
   {
     id: 2,
-    image: "/general-images/IWD'24Challenge.png",
-    title: "IWD'24",
+    image: "/general-images/carousel-2-qiskit.png",
+    title: "QisKit",
     description: "A memory from our prompt challenge, with participants fully immersed in the task.",
   },
   {
     id: 3,
-    image: "/general-images/devFestPicture.png",
-    title: "DevFest'22",
+    image: "/general-images/carousel-3-uxcamp.png",
+    title: "UXCamp",
     description: "Together at DevFest, learning, sharing, and connecting.",
   },
   {
     id: 4,
-    image: "/general-images/participants.jpg",
-    title: "ARduino workshop",
+    image: "/general-images/carousel-4-iwd22.png",
+    title: "IWD'22",
     description: "Participants from our Arduino workshop",
-  },
-  {
-
-    id: 5,
-    image: "/general-images/firebase-summit.png",
-    title: "Firebase Summit 2019",
-    description: "Our amazing leads at firbase Summit Madrid 2019",
-  },
+  }
 ]
 
 export function PhotoCarousel() {

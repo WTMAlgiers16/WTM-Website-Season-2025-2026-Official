@@ -42,7 +42,8 @@ export default function AboutPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">About Women Techmakers</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Empowering women in technology through community, education, and mentorship since 2020. Learn about our
-              journey, values, and vision for the future! 🚀
+              journey, values, and vision for the future! 
+              {/* 🚀 */}
             </p>
           </AnimatedElement>
         </div>
@@ -59,7 +60,7 @@ export default function AboutPage() {
                   <p>
                     Women Techmakers began as a small group of passionate women who saw the need for more representation
                     and support in the technology industry. What started as informal meetups has grown into a thriving
-                    community of 500+ members.
+                    community of 200+ members.
                   </p>
                   <p>
                     We believe that diversity drives innovation, and when women are empowered to participate fully in
@@ -68,7 +69,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     From coding bootcamp graduates to seasoned CTOs, our members represent the full spectrum of the tech
-                    industry. Together, we're not just changing careers – we're changing the face of technology itself.
+                    industry. Together, we're not just changing careers, we're changing the face of technology itself.
                   </p>
                 </div>
               </div>
@@ -77,7 +78,7 @@ export default function AboutPage() {
             <AnimatedElement animation="slide-in-right">
               <div className="relative">
                 <img
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/general-images/aboutPage.png"
                   alt="Women Techmakers community"
                   className="rounded-3xl shadow-2xl"
                 />

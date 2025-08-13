@@ -248,6 +248,12 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                         <div className="text-3xl font-bold text-[#16E7B4] mb-2">{event.impact.participants}</div>
                         <div className="text-sm text-gray-600">Participants</div>
                       </div>
+                      {event.impact.totalProjectsSubmitted && (
+                        <div className="text-center">
+                          <div className="text-3xl font-bold text-[#2B6ED1] mb-2">{event.impact.totalProjectsSubmitted}</div>
+                          <div className="text-sm text-gray-600">Submitted projects</div>
+                        </div>
+                      )}
                       {event.impact.newConnections && (
                         <div className="text-center">
                           <div className="text-3xl font-bold text-[#4FC3F7] mb-2">{event.impact.newConnections}</div>
@@ -264,12 +270,6 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                         <div className="text-center">
                           <div className="text-3xl font-bold text-[#2B6ED1] mb-2">{event.impact.mentorshipPairs}</div>
                           <div className="text-sm text-gray-600">Mentorship Pairs</div>
-                        </div>
-                      )}
-                      {event.impact.totalProjectsSubmitted && (
-                        <div className="text-center">
-                          <div className="text-3xl font-bold text-[#2B6ED1] mb-2">{event.impact.totalProjectsSubmitted}</div>
-                          <div className="text-sm text-gray-600">Submitted projects</div>
                         </div>
                       )}
                     </div>
