@@ -924,8 +924,8 @@ export const eventsData = {
       date: "2021-11-18",
       time: "Whole day (for 3 days)",
       location: "Fully Online",
-      // attendees: 38,
-      // maxAttendees: 50,
+      attendees: 50,
+      maxAttendees: 50,
       mission: "To inspire and empower aspiring coders, especially women, by providing an engaging competitive programming environment that enhances skills, fosters creativity, and celebrates diversity in technology.",
       description: "WTM Algiers and GDG celebrate Ada Lovelace Day with a competitive programming event featuring workshops, talks, and a hackathon to inspire and empower the tech community.",
       fullDescription: `

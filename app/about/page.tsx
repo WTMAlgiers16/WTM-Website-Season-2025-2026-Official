@@ -25,11 +25,12 @@ const values = [
 ]
 
 const milestones = [
-  { year: "2020", event: "WTM Chapter Founded", description: "Started with 25 passionate women" },
-  { year: "2021", event: "First Major Conference", description: "200+ attendees, 15 speakers" },
-  { year: "2022", event: "Mentorship Program Launch", description: "50 mentor-mentee pairs" },
-  { year: "2023", event: "Partnership Expansion", description: "10+ industry partners joined" },
-  { year: "2024", event: "500+ Community Members", description: "Reached our biggest milestone yet!" },
+  { year: "2019", event: "WTM Chapter Founded", description: "Started by a few passionate women determined to empower the tech community." },
+  { year: "2020", event: "First International Women Day celebration + ideathon", description: "+10 mentors and trainers, +50 participants" },
+  { year: "2021", event: "Collaborating with GDG Algiers in DevFest 2021", description: "+20 mentors and speakers, +100 participants" },
+  { year: "2022", event: "Qiskit Fall Fest Algiers", description: "featuring 5 expert talks and 2 advanced workshops, along with intellectual challenges, +100 attendees" },
+  { year: "2023", event: "She shares", description: "+100 attendees" },
+  { year: "2024", event: "Reaching +200 members", description: "Proudly crossing the 200-member milestone, marking a new chapter in our community's growth." },
 ]
 
 export default function AboutPage() {
@@ -126,7 +127,7 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Our Journey</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                From humble beginnings to a thriving community – here are the key milestones in our story.
+                From humble beginnings to a thriving community, here are the key milestones in our story.
               </p>
             </div>
           </AnimatedElement>
