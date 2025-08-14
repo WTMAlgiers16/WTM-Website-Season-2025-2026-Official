@@ -6,27 +6,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const groupPhotos = [
   {
     id: 1,
-    image: "/general-images/carousel-1devfest22.png",
-    title: "DevFest 2022",
-    description: "Mentors and mentees from our WTMLib event",
+    image: "/general-images/hachcode.jpg",
+    title: "Hash code",
+    description: "Celebrating teamwork and innovation with GDG and WTM Algiers after the Hash Code competition.",
   },
   {
     id: 2,
-    image: "/general-images/carousel-2-qiskit.png",
-    title: "QisKit",
-    description: "A memory from our prompt challenge, with participants fully immersed in the task.",
+    image: "/general-images/iwd24.jpg",
+    title: "IWD'24",
+    description: "A vibrant IWD 2024 celebration with GDG and WTM Algiers, empowering women in technology.",
   },
   {
     id: 3,
-    image: "/general-images/carousel-3-uxcamp.png",
+    image: "/general-images/uxcamp-group-pic.jpg",
     title: "UXCamp",
-    description: "Together at DevFest, learning, sharing, and connecting.",
+    description: "A joyful moment with GDG and WTM Algiers at the close of the UCCamp events.",
   },
   {
     id: 4,
-    image: "/general-images/carousel-4-iwd22.png",
-    title: "IWD'22",
-    description: "Participants from our Arduino workshop",
+    image: "/general-images/wtmWinners-dubai-hackathon.jpg",
+    title: "Women's online safety Hackathon - Dubai",
+    description: "WTM ambassadors shining on the podium with a third-place victory at the first women's online safety hackathon in Dubai.",
   }
 ]
 
@@ -66,7 +66,7 @@ export function PhotoCarousel() {
         {groupPhotos.map((photo, index) => (
           <div key={photo.id} className="carousel-slide h-full">
             <div className="relative h-full">
-              <img src={photo.image || "/placeholder.svg"} alt={photo.title} className="w-[100vw] h-[90vh]" />
+              <img src={photo.image || "/placeholder.svg"} alt={photo.title} className="w-[100vw]" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">{photo.title}</h3>
