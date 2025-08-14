@@ -83,8 +83,10 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                     </div>
                   </div>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{event.title} · {event.theme}</h1>
-                <p className="text-xl text-white/90 mb-6">{event.mission}</p>
+                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                  {event.title}
+                  {event.theme && <> · {event.theme}</>}
+                </h1>                <p className="text-xl text-white/90 mb-6">{event.mission}</p>
                 <div className="flex items-center gap-6">
                   <div className="flex items-center gap-2 text-white">
                     <Users className="w-5 h-5" />

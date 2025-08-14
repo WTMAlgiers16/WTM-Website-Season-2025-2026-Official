@@ -1667,35 +1667,35 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
       images: ["/general-images/arduino-mem1.png", "/general-images/arduino-mem2.png", "/general-images/arduino-mem3.png"],
       agenda:[
         {
-      "time": "9:00am - 9:45am",
+      "time": "9:00 AM - 9:45 AM",
       "activity": "Basic Electronics"
     },
     {
-      "time": "9:55am - 11:00am",
+      "time": "9:55 AM - 11:00 AM",
       "activity": "Arduino IDE, Functions & Commands"
     },
     {
-      "time": "11:00am - 11:30am",
+      "time": "11:00 AM - 11:30 AM",
       "activity": "First Quiz"
     },
     {
-      "time": "11:30am - 12:15pm",
+      "time": "11:30 AM - 12:15 PM",
       "activity": "DC/Servo Motors & LCD Implementation"
     },
     {
-      "time": "12:15pm - 1:15pm",
+      "time": "12:15 PM - 1:15 PM",
       "activity": "Lunch Time"
     },
     {
-      "time": "1:15pm - 1:45pm",
+      "time": "1:15 PM - 1:45 PM",
       "activity": "Second Quiz: Simulation with Tinkercad"
     },
     {
-      "time": "1:50pm - 2:50pm",
+      "time": "1:50 PM - 2:50 PM",
       "activity": "First Project: 'Good Morning LCD'"
     },
     {
-      "time": "3:00pm - 4:00pm",
+      "time": "3:00 PM - 4:00 PM",
       "activity": "Second Project: 'Let Your Robot Imitate You'"
     }
       ],
@@ -1708,6 +1708,185 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
           image: "/speakers-images/bech.jpg",
         },
       ],
+    },
+
+
+    {
+      id: 16,
+      title: "ManageIt",
+      theme: "",
+      date: "2021-10-08",
+      time: "8:00 PM (for 2 days)",
+      location: "Online on discord server",
+      // attendees: 120,
+      // maxAttendees: 150,
+      mission: "To empower aspiring entrepreneurs with the knowledge, tools, and expert guidance needed to effectively manage and grow their innovative projects.",
+      description: "ManageIt is a 2-day online event featuring 3 expert talks and a panel discussion",
+      fullDescription: `
+        <p>ManageIt is a 2-day online event created for entrepreneurs who are taking their first steps toward turning their ideas into reality. Through 3 expert-led talks and an engaging panel discussion, participants will gain valuable knowledge on effective project management, learn from real-world experiences, and discover practical tools for success. The event brings together professionals from various industries to share strategies, answer questions, and inspire participants to manage their projects with confidence and efficiency.</p>
+        `,
+      image: "/general-images/managit.png",
+
+      agenda:[
+        {
+      "time": "Day 1: 5:40 PM",
+      "activity": "Opening ceremony"
+    },
+    {
+      "time": "6:00 PM",
+      "activity": "Talk 1: Entrepreneurial Project management"
+    },
+    {
+      "time": "8:00 PM",
+      "activity": "Panel: Project management"
+    },
+    {
+      "time": "Day 2: 8:00 PM",
+      "activity": "Experience sharing and introduction to agile project management"
+    },
+    {
+      "time": "9:00 PM",
+      "activity": "Project management, products management and more"
+    },
+      ],
+      registrationOpen: false,
+      speakers: [
+        {
+          name: "Fatima Zohra Benhamida",
+          role: "Technical Product Manager at Dolead",
+          bio: "Product manager with a background in higher education, creating user-focused digital products through strategic thinking, communication, and collaboration.",
+          image: "/speakers-images/fatima.jpg",
+        },
+        {
+          name: "Amouri Mohammed Abdessamed",
+          role: "Youth Delegate and Project Assistant at the United Nations Development Programme",
+          bio: "Youth Development Delegate at 'PNUD' and a product develpment manager at 'Société Générale Algérie'",
+          image: "/speakers-images/amouri.jpg",
+        },
+        {
+          name: "Asmaa Chadouli",
+          role: "Program Manager & Trainer at BambooGeeks",
+          bio: "Program Manager driving innovation and collaboration in the MENA tech ecosystem, with experience building hundreds of developer communities, training thousands for tech careers, and supporting startups with UX fundamentals.",
+          image: "/speakers-images/asmaaC.jpg",
+        },
+        {
+          name: "Nesrine Dib",
+          role: "Business Manager Telecom & IT",
+          bio: "Experienced manager with over 12 years in project management, client relations, and business development across various sectors.",
+          image: "/speakers-images/nesrine.jpg",
+        },
+        {
+          name: "Soumia Dellal",
+          role: "Master’s student in Management and Business Administration, Project Management Intern, IT",
+          bio: "Gained practical experience in IT project management, especially in Agile environments, across sectors like banking, finance, and energy efficiency. Skilled in functional analysis, improving digital tools (including Salesforce), and optimizing internal processes.",
+          image: "/speakers-images/soumia.jpg",
+        },
+        {
+          name: "Zakaria Djedou",
+          role: "Co-founder & CTO of winnr.gg",
+          image: "/speakers-images/zakaria.png",
+        },
+      ],
+      highlights:[
+        "4 informative posts",
+        "3 talks",
+        "A panel with 3 experts"
+      ]
+    },
+
+    {
+      id: 17,
+      title: "WTM ROADSHOW",
+      theme: "",
+      date: "2020-01-14",
+      time: "Weekly",
+      location: "Depends on the destination",
+      // attendees: 120,
+      // maxAttendees: 150,
+      mission: "To connect, inspire, and engage students across Algeria through interactive sessions, sharing opportunities, and building stronger links between communities and the tech ecosystem.",
+      description: "A multi-stop roadshow bringing dynamic activities, talks, and networking opportunities directly to students in Algiers, starting January 14, 2020.",
+      fullDescription: `
+        <p>The first roadshow is about to start! We’ve packed our bags, hopped on the bus, and are heading your way to bring energy, inspiration, and opportunities to campuses across Algiers. This traveling series will include interactive activities, engaging discussions, and valuable networking moments designed to connect students with each other and with the wider tech and innovation community.</p>
+        <br>
+        <h3><strong>Here’s where we went:</strong></h3>
+        <ul>
+        <li>1st Destination: ENP Algiers — January 14, 2020</li>
+        <li>2nd Destination: ENST Algiers — January 21, 2020</li>
+        <li>3rd Destination: El Alia Residence, Bab Ezzouar — February 2, 2020</li>
+        </ul>
+        `,
+      image: "/general-images/roadshow.png",
+      images:["/general-images/rs-mem1.png", "/general-images/rs-mem2.png", "/general-images/rs-mem3.png", "/general-images/rs-mem4.png",
+        "/general-images/rs-mem5.png", "/general-images/rs-mem6.png", "/general-images/rs-mem7.png", "/general-images/rs-mem8.png",
+        "/general-images/rs-mem9.png", "/general-images/rs-mem10.png"
+      ],
+      registrationOpen: false,
+    },
+
+
+    {
+      id: 18,
+      title: "WTM Podcasts",
+      theme: "",
+      date: "2021-04-17",
+      time: "Weekly",
+      location: "Online",
+      // attendees: 120,
+      // maxAttendees: 150,
+      mission: "Empower individuals with practical knowledge and inspiration through expert-led talks that promote self-growth, entrepreneurship, mental well-being, and tech careers.",
+      description: "A multi-stop roadshow bringing dynamic activities, talks, and networking opportunities directly to students in Algiers, starting January 14, 2020.A curated series of talks featuring practitioners and community leaders who share actionable insights on self-love, mental health, UX, freelancing, startups, and succeeding in tech—tailored for the local ecosystem.",
+      fullDescription: `
+          <p>This event series brings together experts and practitioners to share real-world advice on building sustainable careers, founding and growing startups, and maintaining well-being along the way. From learning how to learn, to navigating UX and freelancing, to understanding the startup landscape in Algeria, attendees gain practical tools and inspiration to take confident next steps.</p>
+          <br>
+          <div style="max-width:900px; margin:0 auto;">   
+            <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">    
+            <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px;">        
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">          
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Self-love &amp; How Important It Is</strong></h3>         
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Insraa Hamdine</p>         
+            <a href="https://open.spotify.com/episode/6hrkNSx6ZSbmvZabWIqXp9?si=wl8IXGKAQbCc59NmQzm0og" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>        
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">          
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Entrepreneurship in Algeria</strong></h3>         
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Yaakoub Benarab &amp; Kaouther Farah</p>          
+            <a href="https://open.spotify.com/episode/6qGaDyhupHtgtcRvfnFhb0?si=AqECWqPkTUC12hjg51gnsg" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>       
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">         
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Mental Health</strong></h3>          
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Abir Feltane &amp; Israa Hamdine</p>          
+            <a href="https://open.spotify.com/episode/0YHCjmVPj3LVIIB4Sb42tr?si=3zZNKzuPTkCSAGJFIN9NKw" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>        
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">         
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Becoming a Successful Woman in Tech</strong></h3>        
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Abir Hammache &amp; Alaa Guermat</p>          
+            <a href="https://open.spotify.com/episode/7e5i0zC7rbuJyOARZN74Uo?si=fJeJT_ldQ1KPjrLWuTVZgA&context=spotify%3Ashow%3A1jNli18sECptxPkDpAscb5" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>       
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">        
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Learn How to Learn</strong></h3>          
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Amirouche Redha &amp; Saadi Ania</p>          
+            <a href="https://open.spotify.com/episode/3ka1va5issLToFzwdFkgi9?si=3UPM5dOFTYmkzuXjGrhkZQ&context=spotify%3Ashow%3A1jNli18sECptxPkDpAscb5" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>        
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">          
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Startups in Algeria</strong></h3>          
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Abdelhalim Lagrid &amp; Yousra Farhani</p>          
+            <a href="https://open.spotify.com/episode/0xmBL8z9pDfDUKJuSBUHhI?si=Bnf1vi64Q-aJKghkE1FbPA&context=spotify%3Ashow%3A1jNli18sECptxPkDpAscb5 " target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>        
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">          
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Let’s Talk UX</strong></h3>          
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Asmaa Haidour &amp; Meriem Retiel</p>          
+            <a href="https://open.spotify.com/episode/6scLJKKliT3koZYMf0RQRt?si=Kj4h_A5YS0GO1fcnwmIonQ&context=spotify%3Ashow%3A1jNli18sECptxPkDpAscb5" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>        
+            <li style="border:1px solid #e2e8f0; border-radius:12px; padding:14px; background:#fafafa;">          
+            <h3 style="margin:0 0 6px; font-size:16px;"><strong>Women and Freelance</strong></h3>         
+            <p style="margin:0 0 8px; color:#475569;">Speaker: Asmaa Haidour &amp; Noria Makhloufi</p>          
+            <a href="https://open.spotify.com/episode/2Sm8iKQTOzZniA2vGUpGKz?si=1eiCE0EMQnqO7wg7C_r22w&context=spotify%3Ashow%3A1jNli18sECptxPkDpAscb5" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; color:#16E7B4;">Watch</a>        
+            </li>      
+            </ul>    
+            </div>  
+            </div>
+        `,
+      image: "/general-images/podcasts.png",
+      registrationOpen: false,
     },
   ] as Event[],
 }
