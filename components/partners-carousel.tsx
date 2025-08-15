@@ -1,17 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { currentPartners } from "@/data/partners-data"
 
-const partners = [
-  { name: "TechCorp", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "InnovateLab", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "CodeAcademy", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "StartupHub", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "DevTools Inc", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "CloudTech", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "DataFlow", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "AITech", logo: "/placeholder.svg?height=80&width=120" },
-]
+const partners = currentPartners.map(partner => ({
+  name: partner.name,
+  logo: partner.logo,
+}))
 
 export function PartnersCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -32,8 +27,8 @@ export function PartnersCarousel() {
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{
-          transform: `translateX(-${(currentIndex * 100) / 6}%)`,
-          width: `${(extendedPartners.length * 100) / 6}%`,
+          transform: `translateX(-${(currentIndex * 100) / 8}%)`,
+          width: `${(extendedPartners.length * 100) / 8}%`,
         }}
       >
         {extendedPartners.map((partner, index) => (

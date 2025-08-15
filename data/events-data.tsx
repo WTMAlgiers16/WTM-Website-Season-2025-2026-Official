@@ -924,8 +924,8 @@ export const eventsData = {
       date: "2021-11-18",
       time: "Whole day (for 3 days)",
       location: "Fully Online",
-      // attendees: 38,
-      // maxAttendees: 50,
+      attendees: 50,
+      maxAttendees: 50,
       mission: "To inspire and empower aspiring coders, especially women, by providing an engaging competitive programming environment that enhances skills, fosters creativity, and celebrates diversity in technology.",
       description: "WTM Algiers and GDG celebrate Ada Lovelace Day with a competitive programming event featuring workshops, talks, and a hackathon to inspire and empower the tech community.",
       fullDescription: `
@@ -1834,7 +1834,7 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
       // attendees: 120,
       // maxAttendees: 150,
       mission: "Empower individuals with practical knowledge and inspiration through expert-led talks that promote self-growth, entrepreneurship, mental well-being, and tech careers.",
-      description: "A multi-stop roadshow bringing dynamic activities, talks, and networking opportunities directly to students in Algiers, starting January 14, 2020.A curated series of talks featuring practitioners and community leaders who share actionable insights on self-love, mental health, UX, freelancing, startups, and succeeding in tech—tailored for the local ecosystem.",
+      description: "A curated series of talks featuring practitioners and community leaders who share actionable insights on self-love, mental health, UX, freelancing, startups, and succeeding in tech—tailored for the local ecosystem.",
       fullDescription: `
           <p>This event series brings together experts and practitioners to share real-world advice on building sustainable careers, founding and growing startups, and maintaining well-being along the way. From learning how to learn, to navigating UX and freelancing, to understanding the startup landscape in Algeria, attendees gain practical tools and inspiration to take confident next steps.</p>
           <br>
