@@ -34,14 +34,12 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      <WTMCountdown/>
       {/* Photo Carousel */}
       <section className="relative">
         <AnimatedElement animation="fade-in">
           <PhotoCarousel />
         </AnimatedElement>
       </section>
-
       {/* Hero Section */}
       <section className="relative overflow-hidden gradient-animate text-white">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -80,6 +78,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </AnimatedElement>
+             <WTMCountdown/>
           </div>
         </div>
       </section>
