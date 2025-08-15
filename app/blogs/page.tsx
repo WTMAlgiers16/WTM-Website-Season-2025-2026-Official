@@ -183,7 +183,7 @@ export default function BlogsPage() {
 
                     <Link
                       href={`/blogs/${post.id}`}
-                      className="block mt-4 text-[#03BDA3] hover:text-[#16E7B4] font-semibold text-sm flex items-center gap-1 transition-colors"
+                      className="mt-4 text-[#03BDA3] hover:text-[#16E7B4] font-semibold text-sm flex items-center gap-1 transition-colors"
                     >
                       Read More <ArrowRight className="w-4 h-4" />
                     </Link>
@@ -202,9 +202,11 @@ export default function BlogsPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Never Miss a Story!</h2>
             <p className="text-lg mb-8 opacity-90">
               Subscribe to our newsletter and get the latest insights, tips, and inspiration delivered straight to your
-              inbox! 📧
+              inbox!
+               {/* 📧 */}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+              {/*Handle it later */}
               <input
                 type="email"
                 placeholder="Enter your email"

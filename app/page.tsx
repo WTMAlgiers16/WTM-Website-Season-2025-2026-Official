@@ -69,7 +69,7 @@ export default function HomePage() {
 
             <AnimatedElement animation="scale-in" delay={800}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="fun-button text-lg px-8 py-4">Join Our Community</button>
+                {/* <button className="fun-button text-lg px-8 py-4">Join Our Community</button> */}
                 <Link
                   href="/events"
                   className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105"

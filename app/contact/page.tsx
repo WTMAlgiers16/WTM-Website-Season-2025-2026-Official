@@ -237,7 +237,9 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">Quick answers to common questions. Don't see yours? Just ask! 🤔</p>
+            <p className="text-xl text-gray-600">Quick answers to common questions. Don't see yours? Just ask! 
+              {/* 🤔 */}
+              </p>
           </div>
 
           <div className="space-y-6">
@@ -255,8 +257,8 @@ export default function ContactPage() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 mb-6">Still have questions? We're here to help!</p>
-            <button className="fun-button px-8 py-3">Ask Us Anything</button>
+            <p className="text-lg text-gray-600 mb-6">Still have questions? We're here to help! Reach us out on our socials</p>
+            {/* <button className="fun-button px-8 py-3" >Ask Us Anything</button> */}
           </div>
         </div>
       </section>

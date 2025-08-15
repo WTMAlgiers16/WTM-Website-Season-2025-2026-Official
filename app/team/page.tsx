@@ -91,7 +91,7 @@ export default function TeamPage() {
             <p className="text-xl text-gray-600 mb-8">
               We're always looking for passionate individuals who want to make a difference in the tech community!
             </p>
-            <button className="fun-button text-lg px-8 py-4">View Open Positions</button>
+            {/* <button className="fun-button text-lg px-8 py-4">View Open Positions</button> */}
           </AnimatedElement>
         </div>
       </section>
@@ -107,10 +107,10 @@ export default function TeamPage() {
                 year brings new opportunities for growth and innovation!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="fun-button px-6 py-3">Apply for Leadership</button>
+                {/* <button className="fun-button px-6 py-3">Apply for Leadership</button>
                 <button className="bg-white text-[#03BDA3] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors border border-[#03BDA3]">
                   View Past Teams
-                </button>
+                </button> */}
               </div>
             </div>
           </AnimatedElement>

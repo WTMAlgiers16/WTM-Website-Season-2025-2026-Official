@@ -202,10 +202,10 @@ export default function AboutPage() {
               opportunities for women in tech!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="fun-button text-lg px-8 py-4">Become a Member</button>
+              {/* <button className="fun-button text-lg px-8 py-4">Become a Member</button>
               <button className="bg-gray-100 text-[#03BDA3] px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition-colors">
                 Learn More
-              </button>
+              </button> */}
             </div>
           </AnimatedElement>
         </div>
