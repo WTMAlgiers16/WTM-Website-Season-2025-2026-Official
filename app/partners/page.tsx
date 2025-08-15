@@ -28,15 +28,6 @@ const partnerBenefits = [
   },
 ]
 
-const currentPartners = [
-  { name: "TechCorp", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "InnovateLab", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "CodeAcademy", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "StartupHub", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "DevTools Inc", logo: "/placeholder.svg?height=80&width=120" },
-  { name: "CloudTech", logo: "/placeholder.svg?height=80&width=120" },
-]
-
 export default function PartnersPage() {
   // Add state for modal at the top of the component
   const [modalOpen, setModalOpen] = useState(false)
@@ -58,7 +49,8 @@ export default function PartnersPage() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Become Our Partner</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
             Join us in empowering women in technology! Partner with WTM to make a meaningful impact while connecting
-            with amazing talent and growing your brand. 🤝
+            with amazing talent and growing your brand. 
+            {/* 🤝 */}
           </p>
         </div>
       </section>
@@ -69,8 +61,9 @@ export default function PartnersPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Why Partner With Us?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              When you partner with Women Techmakers, you're not just supporting diversity – you're investing in the
-              future of technology! 🚀
+              When you partner with Women Techmakers, you're not just supporting diversity, you're investing in the
+              future of technology! 
+              {/* 🚀 */}
             </p>
           </div>
 
@@ -95,7 +88,7 @@ export default function PartnersPage() {
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Sponsorship Opportunities</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Support our mission and gain visibility in the tech community through various sponsorship opportunities!
-              🤝
+              {/* 🤝 */}
             </p>
           </div>
 
@@ -156,7 +149,8 @@ export default function PartnersPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Our Amazing Partners</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're proud to work with these incredible organizations who share our mission! 🌟
+              We're proud to work with these incredible organizations who share our mission! 
+              {/* 🌟 */}
             </p>
           </div>
 
@@ -263,7 +257,7 @@ export default function PartnersPage() {
                 <Mail className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
-              <p className="text-gray-600">partnerships@wtm.com</p>
+              <p className="text-gray-600">wtm.algiers@esi.dz</p>
             </div>
 
             <div className="text-center">
@@ -279,7 +273,7 @@ export default function PartnersPage() {
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Visit Us</h3>
-              <p className="text-gray-600">San Francisco, CA</p>
+              <p className="text-gray-600">ESI Algiers</p>
             </div>
           </div>
         </div>
