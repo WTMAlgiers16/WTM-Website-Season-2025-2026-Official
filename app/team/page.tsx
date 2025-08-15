@@ -15,7 +15,8 @@ export default function TeamPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Meet Our {teamData.year} Team</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               The amazing women leading Women Techmakers in {teamData.year}! We're passionate about empowering women in
-              technology and building an inclusive community. 💜
+              technology and building an inclusive community.
+               {/* 💜 */}
             </p>
           </AnimatedElement>
         </div>
