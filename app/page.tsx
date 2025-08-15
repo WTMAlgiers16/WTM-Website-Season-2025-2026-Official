@@ -2,6 +2,7 @@ import Link from "next/link"
 import { ArrowRight, Users, Code, Heart, Sparkles, Calendar, Award, BookOpen } from "lucide-react"
 import { PhotoCarousel } from "@/components/photo-carousel"
 import { AnimatedElement, StaggeredAnimation } from "@/components/animations"
+import WTMCountdown from "@/components/countDown"
 
 export default function HomePage() {
   const stats = [
@@ -33,6 +34,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
+      <WTMCountdown/>
       {/* Photo Carousel */}
       <section className="relative">
         <AnimatedElement animation="fade-in">

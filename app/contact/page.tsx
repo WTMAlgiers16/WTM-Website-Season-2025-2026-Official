@@ -68,11 +68,14 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <form className="space-y-6">
+              <form className="space-y-6" action="https://api.web3forms.com/submit" method="POST">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
+                    <input type="hidden" name="access_key" value="99a0252d-028f-473e-8cd8-6964b33f416d"/>
+                    <input type="hidden" name="subject" value="New Message from WTM Website"/>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
                     <input
+                      name="firstName"
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#42F5C3]/20 focus:border-[#16E7B4] transition-all"
                       placeholder="Your first name"
@@ -81,6 +84,7 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
                     <input
+                    name="lastName"
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#42F5C3]/20 focus:border-[#16E7B4] transition-all"
                       placeholder="Your last name"
@@ -91,6 +95,7 @@ export default function ContactPage() {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
                   <input
+                  name="email"
                     type="email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#42F5C3]/20 focus:border-[#16E7B4] transition-all"
                     placeholder="your.email@example.com"
@@ -99,7 +104,7 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#42F5C3]/20 focus:border-[#16E7B4] transition-all">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#42F5C3]/20 focus:border-[#16E7B4] transition-all" name="subject">
                     <option>Select a topic</option>
                     <option>Join the Community</option>
                     <option>Event Information</option>
@@ -113,6 +118,7 @@ export default function ContactPage() {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
                   <textarea
+                  name="message"
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-[#42F5C3]/20 focus:border-[#16E7B4] transition-all"
                     placeholder="Tell us what's on your mind! We'd love to hear from you..."
@@ -121,6 +127,7 @@ export default function ContactPage() {
 
                 <div className="flex items-center gap-3">
                   <input
+                  name="newsletter"
                     type="checkbox"
                     id="newsletter"
                     className="w-5 h-5 text-[#16E7B4] border-gray-300 rounded focus:ring-[#42F5C3]/20"
@@ -257,7 +264,7 @@ export default function ContactPage() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 mb-6">Still have questions? We're here to help! Reach us out on our socials</p>
+            <p className="text-lg text-gray-600 mb-6">Still have questions? We're here to help!</p>
             {/* <button className="fun-button px-8 py-3" >Ask Us Anything</button> */}
           </div>
         </div>
