@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @theme {
-  --font-sans: "Product Sans", sans-serif;
   /* Green Shades */
   --color-42f5c3: #42f5c3;
   --color-16e7b4: #16e7b4;
@@ -25,7 +24,7 @@
 body {
   background: linear-gradient(135deg, #6cd0f2 0%, #42f5c3 100%);
   min-height: 100vh;
-  font-family: "Product Sans", sans-serif;
+  font-family: var(--font-productsans);
 }
 
 .gradient-text {

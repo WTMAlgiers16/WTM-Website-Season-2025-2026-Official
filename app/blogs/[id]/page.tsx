@@ -118,7 +118,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
       {/* Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             {/* Main Content */}
             <div className="lg:col-span-3">
               <AnimatedElement animation="fade-in">
@@ -188,7 +188,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                       <p className="text-gray-600 text-sm mb-4">Tech Lead & Community Mentor</p>
                       <a
                         href="#"
-                        className="inline-flex items-center gap-2 bg-[#0077B5] text-white px-4 py-2 rounded-full hover:bg-[#005885] transition-colors"
+                        className="inline-flex items-center gap-2 text-sm bg-[#0077B5] text-white px-4 py-2 rounded-full hover:bg-[#005885] transition-colors"
                       >
                         <Linkedin className="w-4 h-4" />
                         Connect on LinkedIn
