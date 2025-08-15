@@ -1,12 +1,40 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import localFont from "next/font/local"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 
-const inter = Inter({ subsets: ["latin"] })
+// const inter = Inter({ subsets: ["latin"] })
+
+const productSans = localFont({
+  src: [
+    {
+      path: "../public/fonts/Product Sans Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Product Sans Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Product Sans Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Product Sans Bold Italic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-productsans",
+  display: "swap",
+});
+
 
 export const metadata: Metadata = {
   title: "Women Techmakers - Empowering Women in Tech",
@@ -21,7 +49,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={productSans.variable}>
         <ScrollToTop />
         <Navigation />
         <main className="min-h-screen">{children}</main>

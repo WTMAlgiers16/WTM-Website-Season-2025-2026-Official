@@ -12,6 +12,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+        	productsans: ["var(--font-productsans)"],
+      	},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
