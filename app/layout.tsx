@@ -6,6 +6,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 
 // const inter = Inter({ subsets: ["latin"] })
@@ -39,6 +41,9 @@ const productSans = localFont({
 
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/general-images/logo wtm.png",
+  },
   title: "Women Techmakers - Empowering Women in Tech",
   description: "Join our community of women in technology. Learn, grow, and make an impact together.",
     generator: 'v0.dev'
@@ -57,6 +62,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
