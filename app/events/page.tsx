@@ -95,7 +95,7 @@ export default function EventsPage() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">{featuredEvent.title}</h2>
-                    <div className="flex flex-wrap gap-6 text-sm opacity-90 mb-4">
+                    <div className="flex flex-wrap md:gap-6 gap-2 text-sm opacity-90 mb-4">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         {new Date(featuredEvent.date).toLocaleDateString()}
@@ -133,7 +133,7 @@ export default function EventsPage() {
                     </div>
                   )}
 
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center text-center">
                     {!featuredEvent.isPast && featuredEvent.isRegistrationOpen ? (
                       <button onClick={() => handleRegister(featuredEvent.id)} className="fun-button text-lg px-8 py-4">
                         Register Now - Free!
@@ -166,7 +166,7 @@ export default function EventsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-4 mb-8">
             <Filter className="w-5 h-5 text-[#03BDA3]" />
-            <div className="flex gap-2">
+            <div className="flex justify-center gap-2">
               {[
                 { key: "all", label: "All Events" },
                 { key: "upcoming", label: "Upcoming" },
@@ -175,7 +175,7 @@ export default function EventsPage() {
                 <button
                   key={filterOption.key}
                   onClick={() => setFilter(filterOption.key)}
-                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+                  className={`px-3 py-1 md:px-6 md:py-3 rounded-full font-semibold transition-all duration-300 text-sm md:text-base ${
                     filter === filterOption.key
                       ? "bg-[#16E7B4] text-white shadow-lg scale-105"
                       : "bg-white text-gray-700 hover:text-[#16E7B4] hover:shadow-md"

@@ -139,7 +139,8 @@ export default function ContactPage() {
 
                 <div className="text-center">
                   <button type="submit" className="fun-button text-lg px-12 py-4">
-                    Send Message 🚀
+                    Send Message 
+                    {/* 🚀 */}
                   </button>
                 </div>
               </form>

@@ -239,7 +239,8 @@ export default function PartnersPage() {
 
                 <div className="text-center">
                   <button type="submit" className="fun-button text-lg px-12 py-4">
-                    Start Our Partnership Journey! 🚀
+                    Start Our Partnership Journey! 
+                    {/* 🚀 */}
                   </button>
                 </div>
               </form>

@@ -83,7 +83,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <div className="max-w-4xl mx-auto">
               <AnimatedElement animation="slide-in-left">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="bg-[#16E7B4] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <span className="bg-[#16E7B4] text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold">
                     {post.category}
                   </span>
                   <div className="flex items-center text-white/80 text-sm gap-4">
@@ -97,7 +97,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                     </div>
                   </div>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{post.title}</h1>
+                <h1 className="text-2xl md:text-5xl font-bold text-white mb-4">{post.title}</h1>
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-gradient-to-r from-[#16E7B4] to-[#4FC3F7] rounded-full flex items-center justify-center">
@@ -117,14 +117,14 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
 
       {/* Content */}
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             {/* Main Content */}
             <div className="lg:col-span-3">
               <AnimatedElement animation="fade-in">
                 <article className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                   <div
-                    className="prose prose-lg max-w-none prose-headings:gradient-text prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-[#03BDA3]"
+                    className="text-center md:text-start prose prose-lg max-w-none prose-headings:gradient-text prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-[#03BDA3]"
                     dangerouslySetInnerHTML={{ __html: post.content || post.excerpt }}
                   />
 

@@ -1,41 +1,57 @@
 "use client"
-
 import { useEffect, useState } from "react"
 import { currentPartners } from "@/data/partners-data"
 
-const partners = currentPartners.map(partner => ({
+const partners = currentPartners.map((partner) => ({
   name: partner.name,
   logo: partner.logo,
 }))
 
 export function PartnersCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [itemsPerView, setItemsPerView] = useState(2) // default desktop
+
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      if (window.innerWidth < 640) {
+        setItemsPerView(2) // mobile
+      } else if (window.innerWidth < 1024) {
+        setItemsPerView(3) // tablet
+      } else {
+        setItemsPerView(4) // desktop
+      }
+    }
+
+    updateItemsPerView()
+    window.addEventListener("resize", updateItemsPerView)
+    return () => window.removeEventListener("resize", updateItemsPerView)
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % partners.length)
-    }, 3000) // Change every 3 seconds
-
+      setCurrentIndex((prevIndex) => {
+        const maxIndex = partners.length - itemsPerView
+        return prevIndex >= maxIndex ? 0 : prevIndex + 1
+      })
+    }, 3000)
     return () => clearInterval(interval)
-  }, [])
-
-  // Create a continuous loop by duplicating partners
-  const extendedPartners = [...partners, ...partners, ...partners]
+  }, [itemsPerView])
 
   return (
     <div className="overflow-hidden">
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{
-          transform: `translateX(-${(currentIndex * 100) / 8}%)`,
-          width: `${(extendedPartners.length * 100) / 8}%`,
+          transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
         }}
       >
-        {extendedPartners.map((partner, index) => (
+        {partners.map((partner, index) => (
           <div
             key={`${partner.name}-${index}`}
             className="flex-shrink-0 px-4"
-            style={{ width: `${100 / extendedPartners.length}%` }}
+            style={{
+              width: `${100 / itemsPerView}%`,
+            }}
           >
             <div className="bg-white rounded-xl p-6 shadow-lg card-hover flex items-center justify-center h-24">
               <img
