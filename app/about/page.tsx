@@ -56,8 +56,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedElement animation="slide-in-left">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">Our Story</h2>
-                <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6 text-center md:text-start">Our Story</h2>
+                <div className="space-y-6 text-lg text-gray-700 leading-relaxed text-center md:text-start">
                   <p>
                     Women Techmakers began as a small group of passionate women who saw the need for more representation
                     and support in the technology industry. What started as informal meetups has grown into a thriving
@@ -79,12 +79,12 @@ export default function AboutPage() {
             <AnimatedElement animation="slide-in-right">
               <div className="relative">
                 <img
-                  src="/general-images/aboutPage.png"
+                  src="/general-images/aboutpage.png"
                   alt="Women Techmakers community"
                   className="rounded-3xl shadow-2xl"
                 />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-[#16E7B4] to-[#4FC3F7] rounded-full flex items-center justify-center floating">
-                  <Heart className="w-16 h-16 text-white" />
+                <div className="absolute -bottom-6 -right-6 w-20 h-20 md:w-32 md:h-32 bg-gradient-to-br from-[#16E7B4] to-[#4FC3F7] rounded-full flex items-center justify-center floating">
+                  <Heart className="w-10 h-10 md:w-16 md:h-16 text-white" />
                 </div>
               </div>
             </AnimatedElement>
@@ -142,9 +142,9 @@ export default function AboutPage() {
                   <div className={`flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}>
                     <div className={`w-1/2 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
                       <div className="bg-white rounded-2xl p-6 shadow-lg card-hover">
-                        <div className="text-2xl font-bold text-[#03BDA3] mb-2">{milestone.year}</div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">{milestone.event}</h3>
-                        <p className="text-gray-600">{milestone.description}</p>
+                        <div className="font-bold text-[#03BDA3] mb-2">{milestone.year}</div>
+                        <h3 className="text-[12px] md:text-xl font-bold text-gray-800 mb-2">{milestone.event}</h3>
+                        <p className="text-[13px] md:text-base text-gray-600">{milestone.description}</p>
                       </div>
                     </div>
 

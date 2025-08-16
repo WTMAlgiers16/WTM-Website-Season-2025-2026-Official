@@ -58,7 +58,7 @@ export function PhotoCarousel() {
 
   return (
     <div
-      className="carousel-container relative h-96 md:h-[500px] shadow-2xl"
+      className="overflow-hidden relative h-96 md:h-[500px] shadow-2xl rounded-none"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
@@ -66,7 +66,7 @@ export function PhotoCarousel() {
         {groupPhotos.map((photo, index) => (
           <div key={photo.id} className="carousel-slide h-full">
             <div className="relative h-full">
-              <img src={photo.image || "/placeholder.svg"} alt={photo.title} className="w-[100vw]" />
+              <img src={photo.image || "/placeholder.svg"} alt={photo.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">{photo.title}</h3>

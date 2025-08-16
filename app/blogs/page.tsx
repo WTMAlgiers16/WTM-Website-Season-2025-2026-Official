@@ -83,7 +83,7 @@ export default function BlogsPage() {
       {/* Featured Post */}
       {blogPosts.length > 0 && (
         <section className="py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <AnimatedElement animation="scale-in">
               <div className="bg-white rounded-3xl shadow-2xl overflow-hidden card-hover">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -112,7 +112,7 @@ export default function BlogsPage() {
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">{blogPosts[0].title}</h2>
                     <p className="text-gray-600 text-lg mb-6">{blogPosts[0].excerpt}</p>
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
+                      <div className="md:flex grid items-center gap-3 ">
                         <div className="w-10 h-10 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center">
                           <User className="w-5 h-5 text-white" />
                         </div>
