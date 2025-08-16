@@ -79,7 +79,7 @@ export default function AboutPage() {
             <AnimatedElement animation="slide-in-right">
               <div className="relative">
                 <img
-                  src="/general-images/aboutPage.png"
+                  src="/general-images/aboutpage.png"
                   alt="Women Techmakers community"
                   className="rounded-3xl shadow-2xl"
                 />
