@@ -5,6 +5,8 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { Analytics } from "@vercel/analytics/next"
+
 
 // const inter = Inter({ subsets: ["latin"] })
 
@@ -54,6 +56,7 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
