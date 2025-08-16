@@ -144,28 +144,35 @@ export function SponsorshipModal({ isOpen, onClose, sponsorshipType }: Sponsorsh
           {/* Contact Form */}
           <div className="mt-8 pt-8 border-t border-gray-200">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Get Started</h3>
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-6" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="99a0252d-028f-473e-8cd8-6964b33f416d"/>
+              <input type="hidden" name="subject" value="New Sponsorship Proposal from WTM Website"/>
               <input
+                name="companyName"
                 type="text"
                 placeholder="Company Name"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <input
+              name="contactPerso"
                 type="text"
                 placeholder="Contact Person"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <input
+              name="email"
                 type="email"
                 placeholder="Email Address"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <input
+              name="phone"
                 type="tel"
                 placeholder="Phone Number"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <textarea
+              name="message"
                 placeholder="Tell us about your goals and how you'd like to partner with us..."
                 rows={4}
                 className="md:col-span-2 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
