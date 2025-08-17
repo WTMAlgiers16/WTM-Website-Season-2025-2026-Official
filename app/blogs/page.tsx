@@ -113,9 +113,17 @@ export default function BlogsPage() {
                     <p className="text-gray-600 text-lg mb-6">{blogPosts[0].excerpt}</p>
                     <div className="flex items-center justify-between">
                       <div className="md:flex grid items-center gap-3 ">
-                        <div className="w-10 h-10 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center">
-                          <User className="w-5 h-5 text-white" />
-                        </div>
+                        {
+                          blogPosts[0]?.authorImage 
+                          ? <img
+                              src={blogPosts[0].authorImage}
+                              alt={blogPosts[0].author}
+                              className="w-10 h-10 rounded-full"
+                            />
+                          : <div className="w-10 h-10 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center">
+                              <User className="w-5 h-5 text-white" />
+                            </div>
+                        }
                         <div>
                           <p className="font-semibold text-gray-800">{blogPosts[0].author}</p>
                           <p className="text-sm text-gray-500">{blogPosts[0].readTime}</p>
@@ -163,9 +171,17 @@ export default function BlogsPage() {
 
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center">
-                          <User className="w-4 h-4 text-white" />
-                        </div>
+                        {
+                          post?.authorImage 
+                          ? <img
+                              src={post.authorImage}
+                              alt={post.author}
+                              className="w-10 h-10 rounded-full"
+                            />
+                          : <div className="w-10 h-10 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center">
+                              <User className="w-5 h-5 text-white" />
+                            </div>
+                        }
                         <span className="text-sm font-semibold text-gray-700">{post.author}</span>
                       </div>
 
