@@ -203,7 +203,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                       <h3 className="text-xl font-bold text-gray-800 mb-2">{post.author}</h3>
                       <p className="text-gray-600 text-sm mb-4">Tech Lead & Community Mentor</p>
                       <a
-                        href="#"
+                        href={post.authorLinkedin}
                         className="inline-flex items-center gap-2 text-sm bg-[#0077B5] text-white px-4 py-2 rounded-full hover:bg-[#005885] transition-colors"
                       >
                         <Linkedin className="w-4 h-4" />
@@ -242,13 +242,13 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Your email"
-                        className="w-full px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50"
+                        className="w-full px-4 py-2 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50"
                         required
                       />
                       <button
                         type="submit"
                         disabled={isSubscribing || isSubscribed}
-                        className="w-full bg-white text-[#03BDA3] py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors disabled:opacity-50"
+                        className="w-full bg-white text-[#03BDA3] py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors disabled:opacity-50"
                       >
                         {isSubscribing ? "Subscribing..." : isSubscribed ? "Subscribed! ✓" : "Subscribe"}
                       </button>

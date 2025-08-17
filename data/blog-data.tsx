@@ -5,6 +5,7 @@ export interface BlogPost {
   content?: string
   author: string
   authorImage?: string
+  authorLinkedin: string
   date: string
   readTime: string
   category: string
@@ -78,6 +79,7 @@ export const blogPosts: BlogPost[] = [
   `,
   author: "Abir Bourbia",
   authorImage:"/blogs-images/writers/abir-bourbia.png",
+  authorLinkedin: "https://www.linkedin.com/in/abir-bourbia-1818a71b3",
   date: "June 8, 2022",
   readTime: "7 min read",
   category: "AI & Future",
@@ -119,6 +121,7 @@ export const blogPosts: BlogPost[] = [
   `,
   author: "Zemouri Nour Fadila",
   authorImage: "/blogs-images/writers/zemouri-nour-fadila.png",
+  authorLinkedin: "https://dz.linkedin.com/in/zemouri-nour-fadila-88070b205",
   date: "June 1, 2022",
   readTime: "4 min read",
   category: "AI & Future",
@@ -192,6 +195,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Women Techmakers Algiers",
+  authorLinkedin: "https://www.linkedin.com/company/wtm-algiers/posts/?feedView=all",
   date: "May 18, 2022",
   readTime: "5 min read",
   category: "Technical",
@@ -231,6 +235,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Samy Benmahrez",
+  authorLinkedin: "https://www.linkedin.com/in/samy-ben/",
   authorImage: "/blogs-images/writers/samy-benmahrez.png",
   date: "May 11, 2022",
   readTime: "3 min read",
@@ -347,6 +352,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Islem Cherouat",
+  authorLinkedin: "https://www.linkedin.com/in/cherouat-mohamed-islam/?locale=fr_FR",
   authorImage: "/blogs-images/writers/islem-cherouat.png",
   date: "May 4, 2022",
   readTime: "6 min read",
@@ -374,6 +380,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Zehor Lahlah",
+  authorLinkedin: "https://www.linkedin.com/in/zehor-lahlah/?utm_source=chatgpt%2Ecom&originalSubdomain=dz",
   authorImage: "/blogs-images/writers/zehor-lahlah.png",
   date: "April 26, 2022",
   readTime: "5 min read",
@@ -421,6 +428,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Alaa Guermat",
+  authorLinkedin: "https://www.linkedin.com/in/alaa-guermat/?utm_source=chatgpt%2Ecom&originalSubdomain=dz",
   authorImage: "/blogs-images/writers/alaa-guermat.png",
   date: "July 27, 2021",
   readTime: "6 min read",
@@ -454,6 +462,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Israa Hamdine",
+  authorLinkedin: "https://www.linkedin.com/in/israa-hamdine/?utm_source=chatgpt%2Ecom&originalSubdomain=dz",
   authorImage: "/blogs-images/writers/israa-hamdine.png",
   date: "July 10, 2021",
   readTime: "4 min read",
@@ -508,6 +517,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Amira Lakrouf",
+  authorLinkedin: "https://www.linkedin.com/company/wtm-algiers/posts/?feedView=all",
   date: "June 19, 2021",
   readTime: "3 min read",
   category: "Technical",
@@ -562,6 +572,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Badaoui Lyna",
+  authorLinkedin: "dz.linkedin.com/in/lyna-badaoui-79574023b",
   authorImage: "/blogs-images/writers/lyna-badaoui.png",
   date: "June 5, 2021",
   readTime: "4 min read",
@@ -622,6 +633,7 @@ export const blogPosts: BlogPost[] = [
     </div>
   `,
   author: "Achour Med Bachir",
+  authorLinkedin:"dz.linkedin.com/in/achour-mohamed-el-bachir-23006819b",
   authorImage: "/blogs-images/writers/achour-med-bachir.png",
   date: "May 23, 2021",
   readTime: "4 min read",
