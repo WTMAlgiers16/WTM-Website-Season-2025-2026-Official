@@ -35,11 +35,11 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
     <div className="min-h-screen bg-gradient-to-br from-[#42F5C3]/10 to-[#4FC3F7]/10">
       {/* Header */}
       <section className="relative">
-        <div className="h-96 relative overflow-hidden">
+        <div className="h-[90vh] md:h-96 relative overflow-hidden">
           <img src={event.image || "/placeholder.svg"} alt={event.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
-          <div className="absolute top-8 left-8">
+          <div className="absolute top-4 left-4 md:top-8 md:left-8">
             <Link
               href="/events"
               className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-300"
@@ -49,12 +49,12 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
             </Link>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 p-8">
+          <div className="absolute bottom-0 left-0 right-0 top-14 md:top-0 md:p-8 p-4">
             <div className="max-w-7xl mx-auto">
               <AnimatedElement animation="slide-in-left">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="md:flex grid justify-items-start items-center gap-2 md:gap-4 mb-4">
                   <span
-                    className={`px-4 py-2 rounded-full text-sm font-semibold ${
+                    className={`px-4 py-2 rounded-full text-xs md:text-sm font-semibold ${
                       event.isPast
                         ? "bg-gray-500 text-white"
                         : event.isRegistrationOpen
@@ -68,8 +68,8 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                         ? "Registration Open"
                         : "Registration Closed"}
                   </span>
-                  <div className="flex items-center text-white/80 text-sm gap-4">
-                    <div className="flex items-center gap-1">
+                  <div className="md:flex grid items-center text-white/80 text-sm gap-4">
+                    <div className="flex  items-center gap-1">
                       <Calendar className="w-4 h-4" />
                       {new Date(event.date).toLocaleDateString()}
                     </div>
@@ -83,14 +83,15 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                     </div>
                   </div>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                <h1 className="text-xl md:text-5xl font-bold text-white mb-2 md:mb-4">
                   {event.title}
                   {event.theme && <> · {event.theme}</>}
-                </h1>                <p className="text-xl text-white/90 mb-6">{event.mission}</p>
-                <div className="flex items-center gap-6">
+                </h1> 
+                <p className="text-base text-white/90 mb-4 md:mb-6">{event.mission}</p>
+                <div className="grid md:flex items-center gap-4 md:gap-6">
                   <div className="flex items-center gap-2 text-white">
                     <Users className="w-5 h-5" />
-                    <span>
+                    <span className="text-base md:text-base">
                       {event.attendees} {event.maxAttendees ? `/ ${event.maxAttendees}` : ""} attendees
                     </span>
                   </div>
@@ -114,9 +115,9 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
             <div className="lg:col-span-2">
               <AnimatedElement animation="fade-in">
                 <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8">
-                  <h2 className="text-3xl font-bold gradient-text mb-6">About This Event</h2>
+                  <h2 className="text-3xl font-bold gradient-text mb-6 md:text-start text-center">About This Event</h2>
                   <div
-                    className="prose prose-lg max-w-none prose-headings:gradient-text prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-[#03BDA3]"
+                    className="md:text-start text-center prose prose-lg max-w-none prose-headings:gradient-text prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-[#03BDA3]"
                     dangerouslySetInnerHTML={{ __html: event.fullDescription }}
                   />
                 </div>
@@ -150,7 +151,7 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                       {event.agenda.map((item, index) => (
                         <div
                           key={index}
-                          className="flex items-start gap-4 p-4 bg-gradient-to-r from-[#42F5C3]/10 to-[#4FC3F7]/10 rounded-xl"
+                          className="grid justify-items-start md:flex items-start gap-4 p-4 bg-gradient-to-r from-[#42F5C3]/10 to-[#4FC3F7]/10 rounded-xl"
                         >
                           <div className="bg-[#16E7B4] text-white px-3 py-1 rounded-full text-sm font-semibold min-w-fit">
                             {item.time}
@@ -172,13 +173,13 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                     <h3 className="text-2xl font-bold gradient-text mb-6">Featured Speakers</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {event.speakers.map((speaker, index) => (
-                        <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                        <div key={index} className="grid md:flex md:justify-items-start justify-items-center items-center gap-4 p-4 bg-gray-50 rounded-xl">
                           <img
                             src={speaker.image || "/placeholder-user.jpg"}
                             alt={speaker.name}
                             className="w-16 h-16 rounded-full object-cover"
                           />
-                          <div>
+                          <div className="md:text-start text-center">
                             <h4 className="font-bold text-gray-800">{speaker.name}</h4>
                             <p className="text-[#03BDA3] font-semibold text-sm">{speaker.role}</p>
                             <p className="text-gray-600 text-sm">{speaker.bio}</p>
@@ -196,13 +197,13 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                     <h3 className="text-2xl font-bold gradient-text mb-6">Featured Mentors</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {event.mentors.map((mentor, index) => (
-                        <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                        <div key={index} className="grid md:flex md:justify-items-start justify-items-center items-center gap-4 p-4 bg-gray-50 rounded-xl">
                           <img
                             src={mentor.image || "/placeholder-user.jpg"}
                             alt={mentor.name}
                             className="w-16 h-16 rounded-full object-cover"
                           />
-                          <div>
+                          <div className="md:text-start text-center">
                             <h4 className="font-bold text-gray-800">{mentor.name}</h4>
                             <p className="text-[#03BDA3] font-semibold text-sm">{mentor.role}</p>
                             <p className="text-gray-600 text-sm">{mentor.bio}</p>
@@ -221,13 +222,13 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {event.trainers.map((trainer, index) => (
-                        <div key={index} className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                        <div key={index} className="grid md:flex md:justify-items-start justify-items-center items-center gap-4 p-4 bg-gray-50 rounded-xl">
                           <img
                             src={trainer.image || "/placeholder-user.jpg"}
                             alt={trainer.name}
                             className="w-16 h-16 rounded-full object-cover"
                           />
-                          <div>
+                          <div className="md:text-start text-center">
                             <h4 className="font-bold text-gray-800">{trainer.name}</h4>
                             <p className="text-[#03BDA3] font-semibold text-sm">{trainer.role}</p>
                             <p className="text-gray-600 text-sm">{trainer.bio}</p>
@@ -314,7 +315,7 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
-                        <MapPin className="w-5 h-5 text-[#16E7B4]" />
+                        <MapPin className="md:w-5 md:h-5 w-8 h-8 text-[#16E7B4]" />
                         <div>
                           <p className="font-semibold text-gray-800">{event.location}</p>
                         </div>

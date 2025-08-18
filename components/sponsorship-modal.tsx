@@ -148,43 +148,48 @@ export function SponsorshipModal({ isOpen, onClose, sponsorshipType }: Sponsorsh
               <input type="hidden" name="access_key" value="99a0252d-028f-473e-8cd8-6964b33f416d"/>
               <input type="hidden" name="subject" value="New Sponsorship Proposal from WTM Website"/>
               <input
+                required
                 name="companyName"
                 type="text"
                 placeholder="Company Name"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <input
-              name="contactPerso"
+                required
+                name="contactPerso"
                 type="text"
                 placeholder="Contact Person"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <input
-              name="email"
+                required
+                name="email"
                 type="email"
                 placeholder="Email Address"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <input
-              name="phone"
+                required
+                name="phone"
                 type="tel"
                 placeholder="Phone Number"
                 className="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               />
               <textarea
-              name="message"
+                required
+                name="message"
                 placeholder="Tell us about your goals and how you'd like to partner with us..."
                 rows={4}
                 className="md:col-span-2 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#16E7B4] focus:border-[#16E7B4]"
               ></textarea>
-              <div className="md:col-span-2 flex gap-4">
-                <button type="submit" className="fun-button px-8 py-3 flex items-center gap-2">
+              <div className="md:col-span-2 md:flex grid gap-4">
+                <button type="submit" className="text-sm md:text-base fun-button px-8 py-3 flex items-center gap-2 justify-center md:justify-start">
                   <Mail className="w-5 h-5" />
                   Send Partnership Request
                 </button>
                 <button
                   type="button"
-                  className="bg-gray-100 text-[#03BDA3] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors flex items-center gap-2"
+                  className="bg-gray-100 text-[#03BDA3] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors flex items-center gap-2 justify-center md:justify-start"
                 >
                   <Phone className="w-5 h-5" />
                   Schedule a Call

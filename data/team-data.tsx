@@ -31,7 +31,6 @@ export const teamData: TeamData = {
       image: "/core-team-pictures/sarah.png",
       social: {
         linkedin: "https://www.linkedin.com/in/sarah-sidmobdev",
-        twitter: "https://twitter.com/sarahjohnson",
         github: "https://github.com/SarahSidAhmed",
         email: "ms_sidahmed@esi.dz",
       },
@@ -138,7 +137,7 @@ export const teamData: TeamData = {
       name: "Laetitia Meziani",
       role: "Relex & Sponsor Manager",
       bio: "Building bridges between WTM and industry partners to create opportunities.",
-      image: "/core-team-pictures/laetitia.jpg",
+      image: "/core-team-pictures/laetitia.png",
       social: {
         linkedin: "https://www.linkedin.com/in/laetitia-meziani-1ab327373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/IaniLaetitia",

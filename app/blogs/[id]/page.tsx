@@ -83,7 +83,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <div className="max-w-4xl mx-auto">
               <AnimatedElement animation="slide-in-left">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="bg-[#16E7B4] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <span className="bg-[#16E7B4] text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold">
                     {post.category}
                   </span>
                   <div className="flex items-center text-white/80 text-sm gap-4">
@@ -97,12 +97,20 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                     </div>
                   </div>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{post.title}</h1>
+                <h1 className="text-2xl md:text-5xl font-bold text-white mb-4">{post.title}</h1>
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#16E7B4] to-[#4FC3F7] rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-white" />
-                    </div>
+                    {
+                      post?.authorImage 
+                      ? <img
+                          src={post.authorImage}
+                          alt={post.author}
+                          className="w-12 h-12 rounded-full"
+                        />
+                      : <div className="w-12 h-12 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center">
+                          <User className="w-6 h-6 text-white" />
+                        </div>
+                        }
                     <div>
                       <p className="font-semibold text-white">{post.author}</p>
                       <p className="text-sm text-white/80">Tech Lead & Mentor</p>
@@ -117,14 +125,14 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
 
       {/* Content */}
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             {/* Main Content */}
             <div className="lg:col-span-3">
               <AnimatedElement animation="fade-in">
                 <article className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                   <div
-                    className="prose prose-lg max-w-none prose-headings:gradient-text prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-[#03BDA3]"
+                    className="text-center md:text-start prose prose-lg max-w-none prose-headings:gradient-text prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-[#03BDA3]"
                     dangerouslySetInnerHTML={{ __html: post.content || post.excerpt }}
                   />
 
@@ -181,13 +189,21 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                   {/* Author Card */}
                   <div className="bg-white rounded-2xl p-6 shadow-lg">
                     <div className="text-center">
-                      <div className="w-20 h-20 bg-gradient-to-r from-[#16E7B4] to-[#4FC3F7] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <User className="w-10 h-10 text-white" />
-                      </div>
+                      {
+                        post?.authorImage 
+                        ? <img
+                            src={post.authorImage}
+                            alt={post.author}
+                            className="w-20 h-20 rounded-full mx-auto mb-4"
+                          />
+                        : <div className="w-20 h-20 bg-gradient-to-r from-[#42F5C3] to-[#16E7B4] rounded-full flex items-center justify-center mx-auto mb-4">
+                            <User className="w-10 h-10 text-white" />
+                          </div>
+                        }
                       <h3 className="text-xl font-bold text-gray-800 mb-2">{post.author}</h3>
                       <p className="text-gray-600 text-sm mb-4">Tech Lead & Community Mentor</p>
                       <a
-                        href="#"
+                        href={post.authorLinkedin}
                         className="inline-flex items-center gap-2 text-sm bg-[#0077B5] text-white px-4 py-2 rounded-full hover:bg-[#005885] transition-colors"
                       >
                         <Linkedin className="w-4 h-4" />
@@ -226,13 +242,13 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Your email"
-                        className="w-full px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50"
+                        className="w-full px-4 py-2 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50"
                         required
                       />
                       <button
                         type="submit"
                         disabled={isSubscribing || isSubscribed}
-                        className="w-full bg-white text-[#03BDA3] py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors disabled:opacity-50"
+                        className="w-full bg-white text-[#03BDA3] py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors disabled:opacity-50"
                       >
                         {isSubscribing ? "Subscribing..." : isSubscribed ? "Subscribed! ✓" : "Subscribe"}
                       </button>
