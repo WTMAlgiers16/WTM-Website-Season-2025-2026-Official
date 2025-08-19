@@ -171,7 +171,7 @@ export const teamData: TeamData = {
     {
       id: 13,
       name: "Ania Meziane",
-      role: "Design Manager",
+      role: "UI/UX Manager",
       bio: "Bringing creativity and visual harmony to every project to inspire and engage the community.",
       image: "/core-team-pictures/ania.jpg",
       social: {
