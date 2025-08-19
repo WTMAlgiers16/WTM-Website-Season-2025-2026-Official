@@ -178,6 +178,7 @@ export default function PartnersPage() {
                     <input type="hidden" name="subject" value="New Partnership Request from WTM Website"/>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Company Name</label>
                     <input
+                      required
                       type="text"
                       name="company"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all"
@@ -187,6 +188,7 @@ export default function PartnersPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Contact Person</label>
                     <input
+                      required
                       name="name"
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all"
@@ -199,7 +201,8 @@ export default function PartnersPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
                     <input
-                    name="email"
+                      required
+                      name="email"
                       type="email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all"
                       placeholder="hello@company.com"
@@ -208,7 +211,8 @@ export default function PartnersPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
                     <input
-                    name="phone"
+                      required
+                      name="phone"
                       type="tel"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all"
                       placeholder="+1 (555) 123-4567"
@@ -218,7 +222,7 @@ export default function PartnersPage() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Partnership Interest</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all" name="partnership">
+                  <select required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all" name="partnership">
                     <option>Select partnership tier</option>
                     <option>Community Partner</option>
                     <option>Event Sponsor</option>
@@ -230,7 +234,8 @@ export default function PartnersPage() {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Tell us about your goals</label>
                   <textarea
-                  name="goals"
+                    required
+                    name="goals"
                     rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition-all"
                     placeholder="What would you like to achieve through this partnership? How can we work together to make an impact?"
