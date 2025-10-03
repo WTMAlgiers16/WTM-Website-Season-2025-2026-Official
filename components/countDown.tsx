@@ -14,7 +14,7 @@ interface TimeLeft {
 
 export default function WTMCountdown() {
   // Set target date - you can modify this to your actual event date
-  const targetDate = new Date('2025-10-07T09:00:00').getTime() // to change
+  const targetDate = new Date('2025-10-13T09:00:00').getTime() // to change
   
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
