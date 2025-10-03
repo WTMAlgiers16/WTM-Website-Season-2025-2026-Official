@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Heart, Instagram, Twitter, Linkedin, Mail } from "lucide-react"
+import { Heart, Instagram, Facebook, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -16,16 +16,16 @@ export function Footer() {
               inclusive tech world! 💜
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
+              <a href="https://www.instagram.com/wtm_algiers/" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
-                <Twitter className="w-6 h-6" />
+              <a href="https://www.facebook.com/WomenTechmakersAlgiers/" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
+                <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
+              <a href="https://www.linkedin.com/company/wtm-algiers/" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
+              <a href="wtm.algiers@esi.dz" className="text-gray-300 hover:text-[#16E7B4] transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
