@@ -1820,6 +1820,7 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
         "/general-images/rs-mem5.png", "/general-images/rs-mem6.png", "/general-images/rs-mem7.png", "/general-images/rs-mem8.png",
         "/general-images/rs-mem9.png", "/general-images/rs-mem10.png"
       ],
+
       registrationOpen: false,
     },
 
@@ -1887,6 +1888,42 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
         `,
       image: "/general-images/podcasts.png",
       registrationOpen: false,
+    },
+
+    {
+      id: 19,
+      title: "WTM UniTour",
+      theme: "",
+      date: "2025-10-06",
+      time: "from 11:00 AM to 3:00 PM",
+      location: "Onsite (at each university)",
+      // attendees: 120,
+      // maxAttendees: 150,
+      mission: "The WTM Algeria University Tour aims to inspire young women to explore the world of technology and promote diversity in the tech ecosystem. Through this tour, we strive to raise awareness about women’s role in tech, connect students with new opportunities, and build a strong, inclusive community that fosters learning, innovation, and collaboration across Algerian universities",
+      description: "The WTM Algeria University Tour is a nationwide journey to connect with students, share the Women Techmakers vision, and celebrate women in technology. Through inspiring interactions and engaging activities, we aim to empower students and spark their passion for innovation and inclusion in tech.",
+      fullDescription: `
+          <p>The WTM Algeria University Tour is an exciting journey across universities in Algeria to engage with students, share the Women Techmakers vision, and celebrate women in tech. Together, we aim to inspire, connect, and empower the next generation of innovators. </p>
+        `,
+      image: "/general-images/story.png",
+      agenda:[
+        {
+      "time": "06 october 2025 - 11:00 AM",
+      "activity": "NHSM University"
+    },
+    {
+      "time": "07 october 2025 - 11:00 AM",
+      "activity": "ENSIA University"
+    },
+    {
+      "time": "08 october 2025 - 11:00 AM",
+      "activity": "ENP University"
+    },
+    {
+      "time": "09 october 2025 - 11:00 AM",
+      "activity": "Ziania University"
+    },
+  ],
+      registrationOpen: null,
     },
   ] as Event[],
 }
