@@ -1918,11 +1918,12 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
       "time": "08 october 2025 - 11:00 AM",
       "activity": "ENP University"
     },
-    {
-      "time": "09 october 2025 - 11:00 AM",
-      "activity": "Ziania University"
-    },
   ],
+  images:["/general-images/recap1.JPG", "/general-images/recap2.JPG","/general-images/recap-ensia1.jpg", "/general-images/recap-ensia2.jpg","/general-images/recap-ensia3.jpg",
+     "/general-images/recap3.JPG", "/general-images/recap-enp1.png", "/general-images/recap-enp2.JPG", "/general-images/recap-enp3.JPG"
+      ],
+      attendees: 130,
+      maxAttendees: 150,
       registrationOpen: null,
     },
   ] as Event[],
