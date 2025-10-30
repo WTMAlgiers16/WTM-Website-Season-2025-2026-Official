@@ -1926,6 +1926,114 @@ A major highlight is the IWD Ideathon, a dynamic idea marathon where participant
       maxAttendees: 150,
       registrationOpen: null,
     },
+    {
+      id: 20,
+      title: "Octopink25",
+      theme: "",
+      date: "2025-10-21",
+      time: "12:00 PM (for 2 days)",
+      location: "Onsite at ESI Algiers - Online on discord server",
+      attendees: 100,
+      maxAttendees: 100,
+      mission: "To provide a space where students can learn, share, and build projects that have a real impact in the fight against breast cancer.",
+      description: "Octopink unites computer science and medical students to explore and create innovative projects blending technology, science, and health.",
+      fullDescription: `
+        <p>Octopink is an academic and creative initiative that brings together passionate young minds from computer science and medicine. It serves as a collaborative space where students explore innovative ideas and develop projects merging science, health, and technology.
+Through mentorship, training, and interdisciplinary collaboration, Octopink encourages innovation, supports talent, and builds bridges between fields — empowering the next generation of changemakers to create impactful solutions for the future of health and technology.
+</p>
+        <!-- Organizers Section -->
+<section aria-labelledby="octopink-organizers" style="font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#1f2937; line-height:1.5; margin-top:2.5rem; margin-bottom:2.5rem;">
+  <div style="max-width:1000px; margin:0 auto;">
+    <h3 id="octopink-organizers" style="font-size:1.25rem; font-weight:700; margin-bottom:1rem; color:#111827;">
+      Organizers
+    </h3>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem;">
+      <!-- Organizer card -->
+      <article style="background:#fff; border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(15,23,42,0.05); display:flex; gap:0.9rem; align-items:center;">
+        <img src="/general-images/logo wtm.png" alt="WTM" width="72" height="72" style=" object-fit:cover; flex-shrink:0;">
+        <div>
+          <p style="margin:0; font-weight:700; color:#0f172a;">WTM Club</p>
+          <p style="margin:0.25rem 0 0 0; color:#475569; font-size:0.92rem;">Organizing activities for both fun and breast cancer awareness</p>
+        </div>
+      </article>
+
+      <article style="background:#fff; border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(15,23,42,0.04); display:flex; gap:0.9rem; align-items:center;">
+        <img src="/partners-images/sourire.png" alt="Sourire" width="72" height="72" style="border-radius:12px; object-fit:cover; flex-shrink:0;">
+        <div>
+          <p style="margin:0; font-weight:700; color:#0f172a;">Sourire a l'innocence</p>
+          <p style="margin:0.25rem 0 0 0; color:#475569; font-size:0.92rem;">Focused on charitable initiatives.</p>
+        </div>
+      </article>
+
+      <article style="background:#fff; border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(15,23,42,0.04); display:flex; gap:0.9rem; align-items:center;">
+        <img src="/partners-images/soai.jpg" alt="SOAI" width="72" height="72" style="border-radius:100%; object-fit:cover; flex-shrink:0;">
+        <div>
+          <p style="margin:0; font-weight:700; color:#0f172a;">School Of AI</p>
+          <p style="margin:0.25rem 0 0 0; color:#475569; font-size:0.92rem;">Demonstrated the use of AI in detecting breast cancer</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+        `,
+      image: "/general-images/octopink25.png",
+      images:["/general-images/octopink25-mem1.png", "/general-images/octopink25-mem2.png", "/general-images/octopink25-mem3.png",
+       "/general-images/octopink25-mem4.png", "/general-images/octopink25-mem5.png", "/general-images/octopink25-mem6.png", "/general-images/octopink25-mem7.png"
+      ],
+      agenda:[
+        {
+      "time": "Oct 21: 12:00 PM",
+      "activity": "Stands day & octopink activities"
+    },
+    {
+      "time": "2:00 PM",
+      "activity": "Writing encouraging messages to brave women"
+    },
+    {
+      "time": "Oct 25 - online: 9:30 AM",
+      "activity": "Official introduction"
+    },
+    {
+      "time": "10:00 AM",
+      "activity": "Conference:AI applied in the field of medicine"
+    },
+    {
+      "time": "7:00 PM",
+      "activity": "Workshop: AI & Health"
+    },
+      ],
+      registrationOpen: false,
+      trainers: [
+        {
+          name: "Aya BENALI KHODJA",
+          role: "Technical manager School of AI",
+          bio: "4th year student at ENSIA. Technical Manager at SOAI. Intern at ASAL.",
+          image: "/speakers-images/aya.png",
+        },
+      ],
+      
+      highlights:[
+        "3 fun activities for awarness",
+        "1 AI workshop",
+      ],
+      partners: [
+        {
+          "name": "Association internationale des étudiants en sciences économiques et commerciales",
+          "logo": "/partners-images/aiesec.png",
+          "role": "organization Partner",
+          "description": "Presented their stands and contributed to the success of Octopink"
+        },
+        {
+          "name": "Meca Club",
+          "logo": "/partners-images/meca.png",
+          "role": "organization Partner",
+          "description": "Presented their stands and contributed to the success of Octopink"
+        },
+      ],
+    },
   ] as Event[],
 }
 
